@@ -1,7 +1,7 @@
-package erik.module1;
+package erik.module2;
 
 /**
  * Created by Erik Pavliuk on 07/04/2017.
  */
-public class HomeWork2 {
+public class Work142 {
 }
