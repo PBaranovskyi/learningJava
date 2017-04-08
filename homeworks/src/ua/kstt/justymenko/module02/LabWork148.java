@@ -28,5 +28,6 @@ public class LabWork148 {
         System.out.println("long in int " + (int)aLong); // -1, lets discuss why
         System.out.println("int in short " + (short) anInt);
         System.out.println("short in byte " + (byte) aShort);
+
     }
 }
