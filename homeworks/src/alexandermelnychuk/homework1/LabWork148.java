@@ -25,7 +25,7 @@ public class LabWork148 {
                 "From float to int: " + intValue + "\n" +
                 "From short to byte: " + byteVale + "\n" +
                 "From boolean to int: " + intVal + "\n" +
-                "From long to float: " + doubleVal
+                "From long to double: " + doubleVal
         );
     }
 }
