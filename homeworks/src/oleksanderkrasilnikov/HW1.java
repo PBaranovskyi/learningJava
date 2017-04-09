@@ -5,19 +5,19 @@ public class HW1 {
     public static void main(String[] args) {
 
      //   Write a console program prints on console each of the primitive data types (byte, short, int, long, float, double, char, boolean).
-        LabWork141();
+        labWork141();
 
 
      //  Write a console program that prints result of each of arithmetic operations (+, -, /, *, %) for two variables of primitive data types.
-        LabWork142();
+        labWork142();
 
 
      //  Write a console program that prints result of each of arithmetic logical (AND, OR, NOT, XOR) for two variables of boolean data type.
-        LabWork143();
+        labWork143();
 
 
      //   Write a console program that prints result of increment and decrement in prefix and postfix mode for integer variable.
-        LabWork144();
+        labWork144();
 
 
      //  Write a console program that prints result of Ternary operator for integer variable initialization.
@@ -25,10 +25,10 @@ public class HW1 {
 
 
      //   Write a console program that prints result type casting for different primitive types.
-        LabWork148();
+        labWork148();
     }
 
-    public static void LabWork141 (){
+    public static void labWork141(){
         byte a = 1;
         short b = 2;
         int c = 3;
@@ -48,7 +48,7 @@ public class HW1 {
         System.out.println("boolean: " + s);
     }
 
-    public static void LabWork142 (){
+    public static void labWork142(){
         int a = 2;
         int b = 5;
 
@@ -59,7 +59,7 @@ public class HW1 {
         System.out.println("%: " + a%b);
     }
 
-    public static void LabWork143 (){
+    public static void labWork143(){
         boolean a = true;
         boolean b = false;
 
@@ -69,7 +69,7 @@ public class HW1 {
         System.out.println("XOR: " + (a ^ b));
     }
 
-    public static void LabWork144 (){
+    public static void labWork144(){
         int a = 0;
         a++;
         System.out.println("prefix ++: " + a);
@@ -87,7 +87,7 @@ public class HW1 {
         System.out.println(a>b? "a>b" + " a=" + a + " b=" + b : "a<b" + " a=" + a + " b=" + b );
     }
 
-    public static void LabWork148 (){
+    public static void labWork148(){
         double b = 101;
         int a = (int) b;
         char c = (char) a;
