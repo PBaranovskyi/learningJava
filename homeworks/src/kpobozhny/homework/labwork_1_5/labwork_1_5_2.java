@@ -43,6 +43,7 @@ public class labwork_1_5_2 {
                     //it was not described in the task what should be done if we have a negative number (x<1), so let's do nothing.
                 }
 
+                // set exit condition
                 enteredCorrectValue=true;
             } catch (NumberFormatException e) {
                 System.out.println("Invalid value. Try again.");
