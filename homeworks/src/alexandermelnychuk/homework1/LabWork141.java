@@ -21,15 +21,13 @@ public class LabWork141 {
 
         boolean booleanValue = false;
 
-        System.out.println(
-                "My byte value is - " + byteValue + "\n" +
-                "My short value is - " + shortValue + "\n" +
-                "My int value is - " + intValue + "\n" +
-                "My long value is - " + longValue + "\n" +
-                "My float value is - " + floatValue + "\n" +
-                "My double value is - " + doubleValue + "\n" +
-                "My char(Unicode) value is - " + charValue + "\n" +
-                "My boolean value is - " + booleanValue
-        );
+        System.out.println("My byte value is - " + byteValue);
+        System.out.println("My short value is - " + shortValue);
+        System.out.println("My int value is - " + intValue);
+        System.out.println("My long value is - " + longValue);
+        System.out.println("My float value is - " + floatValue);
+        System.out.println("My double value is - " + doubleValue);
+        System.out.println("My char(Unicode) value is - " + charValue);
+        System.out.println("My boolean value is - " + booleanValue);
     }
 }

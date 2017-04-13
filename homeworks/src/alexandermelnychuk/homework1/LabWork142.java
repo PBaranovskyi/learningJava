@@ -8,11 +8,10 @@ public class LabWork142 {
         int firstIntValue = 1986;
         int secondIntValue = 5;
 
-        System.out.println(
-                "firstIntValue + secondIntValue = " + (firstIntValue + secondIntValue) + "\n" +
-                "firstIntValue - secondIntValue = " + (firstIntValue - secondIntValue) + "\n" +
-                "firstIntValue / secondIntValue = " + ((float) firstIntValue / (float) secondIntValue) + "\n" +
-                "firstIntValue * secondIntValue = " + (firstIntValue * secondIntValue) + "\n" +
-                "firstIntValue % secondIntValue = " + (firstIntValue % secondIntValue));
+        System.out.println("firstIntValue + secondIntValue = " + (firstIntValue + secondIntValue));
+        System.out.println("firstIntValue - secondIntValue = " + (firstIntValue - secondIntValue));
+        System.out.println("firstIntValue / secondIntValue = " + ((float) firstIntValue / (float) secondIntValue));
+        System.out.println("firstIntValue * secondIntValue = " + (firstIntValue * secondIntValue));
+        System.out.println("firstIntValue % secondIntValue = " + (firstIntValue % secondIntValue));
     }
 }

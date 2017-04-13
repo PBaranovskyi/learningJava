@@ -10,10 +10,9 @@ public class LabWork144 {
         int someIntValue2 = 1;
         int someIntValue3 = 1;
 
-        System.out.println(
-                "Prefix increment  - " + ++someIntValue + "\n" +
-                "Postfix increment - " + someIntValue1++ + "\n" +
-                "Prefix decrement - " + --someIntValue2 + "\n" +
-                "Postfix decrement - " + someIntValue3--);
+        System.out.println("Prefix increment - " + ++someIntValue);
+        System.out.println("Postfix increment - " + someIntValue1++);
+        System.out.println("Prefix decrement - " + --someIntValue2);
+        System.out.println("Postfix decrement - " + someIntValue3--);
     }
 }

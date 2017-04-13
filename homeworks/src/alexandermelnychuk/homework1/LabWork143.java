@@ -8,10 +8,9 @@ public class LabWork143 {
         boolean first = false;
         boolean second = true;
 
-        System.out.println(
-                "Logical AND - " + (first && second) + "\n" +
-                "Logical OR - " + (first || second) + "\n" +
-                "Logical NOT - " + (!(first && second)) + "\n" +
-                "Logical XOR - " + (first ^ second));
+        System.out.println("Logical AND - " + (first && second));
+        System.out.println("Logical OR - " + (first || second));
+        System.out.println("Logical NOT - " + (!(first && second)));
+        System.out.println("Logical XOR - " + (first ^ second));
     }
 }

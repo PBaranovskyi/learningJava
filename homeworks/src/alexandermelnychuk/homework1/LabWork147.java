@@ -5,7 +5,7 @@ package alexandermelnychuk.homework1;
 public class LabWork147 {
     public static void main(String[] args) {
 
-        int result = 10 % 4 !=  2 ? 2 : 25;
+        int result = 10 % 4 != 2 ? 2 : 25;
 
         System.out.println("if-then-else statement in one line result = " + result);
     }
