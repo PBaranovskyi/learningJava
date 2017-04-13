@@ -8,16 +8,16 @@ import java.util.Scanner;
 public class SumOfSquare {
 
     public static void main(String[] args) {
-       int sum = 0;
-        int i=0;
-        Scanner sc =new Scanner(System.in);
-        while(sc.hasNextInt()){
-            i=sc.nextInt();
-            sum += i*i;
+        int sum = 0;
+        int i = 0;
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNextInt()) {
+            i = sc.nextInt();
+            sum += i * i;
             System.out.println(sum);
         }
-        }
-
-
     }
+
+
+}
 

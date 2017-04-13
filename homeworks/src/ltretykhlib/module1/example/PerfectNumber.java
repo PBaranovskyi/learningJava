@@ -11,7 +11,7 @@ public class PerfectNumber {
 
         Scanner s = new Scanner(System.in);
         System.out.print("Enter counter:");
-        int j  = s.nextInt();
+        int j = s.nextInt();
 
         for (int i = 1; i <= j; i++) {
             int sum = 0;
@@ -23,7 +23,7 @@ public class PerfectNumber {
                     sum += k;
                 }
             }
-            if (sum == i){
+            if (sum == i) {
                 System.out.println(sum);
             }
         }

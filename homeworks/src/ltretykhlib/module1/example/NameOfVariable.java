@@ -11,8 +11,8 @@ public class NameOfVariable {
         int month;
         String number;
         System.out.println("Enter number x: ");
-        while(scan.hasNextInt()) {
-            switch (month=scan.nextInt()) {
+        while (scan.hasNextInt()) {
+            switch (month = scan.nextInt()) {
                 case 1:
                     number = "One";
                     System.out.println(number);
