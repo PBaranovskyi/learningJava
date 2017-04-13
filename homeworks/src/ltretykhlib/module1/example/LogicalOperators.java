@@ -10,8 +10,7 @@ public class LogicalOperators {
 
         if (one && two) {
             System.out.println("Both conditions are true.");
-        }
-        else {
+        } else {
             System.out.println("At least one is false.");
 
         }
@@ -19,8 +18,7 @@ public class LogicalOperators {
 
         if (one || two) {
             System.out.println("One of conditions is true, so result true");
-        }
-        else {
+        } else {
             System.out.println("At least one is false, so result false");
 
         }
@@ -28,20 +26,15 @@ public class LogicalOperators {
 
         if (one != two) {
             System.out.println("Different values ");
-        }
-        else {
+        } else {
             System.out.println("Same values");
 
         }
 
-        boolean c=one^two;
-        System.out.println("True if variable differs "+c);
+        boolean c = one ^ two;
+        System.out.println("True if variable differs " + c);
 
-        }
-
-
-
-
+    }
 
 
 }

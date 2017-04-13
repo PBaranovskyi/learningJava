@@ -20,8 +20,8 @@ public class Hackerrank2 {
         System.out.println(d + k);
 
         String str;
-        str= scan.nextLine();
-        str=scan.nextLine();
+        str = scan.nextLine();
+        str = scan.nextLine();
         System.out.println(s.concat(str));
 
         scan.close();
