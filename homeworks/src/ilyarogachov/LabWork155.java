@@ -11,8 +11,6 @@ public class LabWork155 {
             a=a+i;
             System.out.println("The sum is: " + i);
             System.out.println("The avg is: " + a/i);
-
         }
-
     }
 }
