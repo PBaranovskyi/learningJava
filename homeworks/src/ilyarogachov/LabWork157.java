@@ -10,7 +10,6 @@ public class LabWork157 {
         for(int i = 1; i<a; i++){
             double f = a%i;
             if (f==0){
-                 System.out.println(i);
                  k=k+i;
             }
           }
