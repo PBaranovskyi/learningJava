@@ -12,6 +12,10 @@ public class LabWork142 {
         double divide = (double) a / (double) f;
         int multiply =a*f;
         int ost =  a%f;
-        System.out.println(min+"\n"+sum+"\n"+divide+"\n"+multiply+"\n"+ost);
+        System.out.println(min);
+        System.out.println(sum);
+        System.out.println(divide);
+        System.out.println(multiply);
+        System.out.println(ost);
     }
 }

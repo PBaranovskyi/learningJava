@@ -9,7 +9,9 @@ public class LabWork148 {
         double f=3.25;
         char ch='F';
         int m = 97;
-        System.out.println((int) f +"\n" + (double) a + "\n" + (long) f + "\n" + (int) ch + "\n" + (char) m);
-
+        System.out.println((double) a);
+        System.out.println((long) f);
+        System.out.println((int) ch );
+        System.out.println((char) m);
     }
 }
