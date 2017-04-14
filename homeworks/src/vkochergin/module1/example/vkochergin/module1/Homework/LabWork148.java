@@ -9,13 +9,21 @@ public class LabWork148 {
         int a = 100;
         long b = a;
         double c = b;
-        System.out.println("Implicit casting: \n" + a + "\n" + b + "\n" + c);
+        System.out.println("Implicit casting: ");
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println();
 
         //explicit casting:
         double d = 25555555.55;
         long l = (long) d;
         int g = (int) l;
         short t = (short) g;
-        System.out.println("Explicit casting:\n" + d + "\n" + l + "\n" + g + "\n" + t);
+        System.out.println("Explicit casting: ");
+        System.out.println(d);
+        System.out.println(l);
+        System.out.println(g);
+        System.out.println(t);
     }
 }

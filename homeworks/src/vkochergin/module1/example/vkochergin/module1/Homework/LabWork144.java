@@ -10,6 +10,7 @@ public class LabWork144 {
 
         int outSecond = ++in;
 
-        System.out.println(outFirst + "\n" + outSecond);
+        System.out.println(outFirst);
+        System.out.println(outSecond);
     }
 }

@@ -14,8 +14,13 @@ public class LabWork141 {
         char charChar = 'd';
         boolean newBoolean = true;
 
-        System.out.println(byteNum + "\n" + shortNum + "\n"
-                + intNum + "\n" + longNum + "\n" + floatNum
-                + "\n" + doubleNum + "\n" + charChar + "\n" + newBoolean);
+        System.out.println(byteNum);
+        System.out.println(shortNum);
+        System.out.println(intNum);
+        System.out.println(longNum);
+        System.out.println(floatNum);
+        System.out.println(doubleNum);
+        System.out.println(charChar);
+        System.out.println(newBoolean);
     }
 }

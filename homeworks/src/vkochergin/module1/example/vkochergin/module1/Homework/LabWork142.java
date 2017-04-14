@@ -14,7 +14,10 @@ public class LabWork142 {
         int mult = firstInt * secondInt;
         double res = firstInt % secondInt;
 
-        System.out.println(sum + "\n" + dif + "\n" + div + "\n"
-                + mult + "\n" + res);
+        System.out.println(sum);
+        System.out.println(dif);
+        System.out.println(div);
+        System.out.println(mult);
+        System.out.println(res);
     }
 }
