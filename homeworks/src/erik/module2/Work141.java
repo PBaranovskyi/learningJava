@@ -21,5 +21,6 @@ public class Work141 {
         System.out.println(number6);
         System.out.println(number7);
         System.out.println(number8);
+
     }
 }
