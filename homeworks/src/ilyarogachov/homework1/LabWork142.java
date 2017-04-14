@@ -1,4 +1,4 @@
-package ilyarogachov;
+package ilyarogachov.homework1;
 
 /**
  * Created by rogachev on 07.04.17.

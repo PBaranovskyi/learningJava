@@ -1,4 +1,4 @@
-package ilyarogachov;
+package ilyarogachov.homework2;
 
 import jdk.nashorn.internal.ir.WhileNode;
 
@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class LabWork156 {
     public static void main(String[] args) {
         Scanner scan= new Scanner(System.in);
-        System.out.println("Enter a variable from 1 to 3: ");
+        System.out.println("Enter sone int: ");
         int a = scan.nextInt();
         String n ;
         int len=2;

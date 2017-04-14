@@ -1,4 +1,4 @@
-package ilyarogachov;
+package ilyarogachov.homework2;
 import java.io.*;
 import java.util.Scanner;
 
