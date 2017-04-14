@@ -2,14 +2,16 @@ package ilyarogachov;
 
 import jdk.nashorn.internal.ir.WhileNode;
 
+import java.util.Scanner;
+
 /**
  * Created by rogachev on 13.04.17.
  */
 public class LabWork156 {
     public static void main(String[] args) {
-        int a=53;
-
-        int k=a/10;
+        Scanner scan= new Scanner(System.in);
+        System.out.println("Enter a variable from 1 to 3: ");
+        int a = scan.nextInt();
         String n ;
         int len=2;
         while(len>=1){
