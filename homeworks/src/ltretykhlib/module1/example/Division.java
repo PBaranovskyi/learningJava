@@ -11,7 +11,7 @@ public class Division {
                 System.out.println(i);
                 counter++;
                 if (counter % 10 == 0) {
-                    System.out.println("...");
+                    break;
                 }
             }
         }
