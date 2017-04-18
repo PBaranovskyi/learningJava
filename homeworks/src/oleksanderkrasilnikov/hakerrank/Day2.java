@@ -12,13 +12,13 @@ public class Day2 {
         scan.close();
 
         // Write your calculation code here.
-        double tip = (mealCost/100)*tipPercent;
-        double tax = (mealCost/100)*taxPercent;
+        double tip = (mealCost / 100) * tipPercent;
+        double tax = (mealCost / 100) * taxPercent;
 
         // cast the result of the rounding operation to an int and save it as totalCost
-        int totalCost = (int) Math.round(mealCost+tax+tip);
+        int totalCost = (int) Math.round(mealCost + tax + tip);
 
         // Print your result
-        System.out.println("The total meal cost is "+totalCost+" dollars.");
+        System.out.println("The total meal cost is " + totalCost + " dollars.");
     }
 }

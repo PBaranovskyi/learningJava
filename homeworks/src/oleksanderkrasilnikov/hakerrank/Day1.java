@@ -28,7 +28,7 @@ public class Day1 {
         /* Print the sum of the double variables on a new line. */
         System.out.println(d + b);
         /* Concatenate and print the String variables on a new line;
-        	the 's' variable above should be printed first. */
+            the 's' variable above should be printed first. */
         System.out.println(s + c);
         scan.close();
     }
