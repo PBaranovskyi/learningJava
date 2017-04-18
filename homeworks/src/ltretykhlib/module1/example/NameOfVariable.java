@@ -15,56 +15,39 @@ public class NameOfVariable {
             switch (month = scan.nextInt()) {
                 case 1:
                     number = "One";
-                    System.out.println(number);
-                    System.out.println("Enter number x: ");
                     break;
                 case 2:
                     number = "Two";
-                    System.out.println(number);
-                    System.out.println("Enter number x: ");
                     break;
                 case 3:
                     number = "Three";
                     System.out.println(number);
-                    System.out.println("Enter number x: ");
                     break;
                 case 4:
                     number = "Four";
-                    System.out.println(number);
-                    System.out.println("Enter number x: ");
                     break;
                 case 5:
                     number = "Five";
-                    System.out.println(number);
-                    System.out.println("Enter number x: ");
                     break;
                 case 6:
                     number = "Six";
-                    System.out.println(number);
-                    System.out.println("Enter number x: ");
                     break;
                 case 7:
                     number = "Seven";
-                    System.out.println(number);
-                    System.out.println("Enter number x: ");
                     break;
                 case 8:
                     number = "Eight";
-                    System.out.println(number);
-                    System.out.println("Enter number x: ");
                     break;
                 case 9:
                     number = "Nine";
-                    System.out.println(number);
-                    System.out.println("Enter number x: ");
                     break;
                 default:
                     number = "Other";
-                    System.out.println(number);
-                    System.out.println("Enter number x: ");
                     break;
 
             }
+            System.out.println(number);
+            System.out.println("Enter number x: ");
         }
 
     }
