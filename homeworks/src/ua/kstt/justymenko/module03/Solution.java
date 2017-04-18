@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by n1kropol on 4/14/17.
  */
-public class HackRank_Day3 {
+public class Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();

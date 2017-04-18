@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Created by Ustymenko on 04/14/17.
  * in HackerRank class calls Arithmetic
  */
-public class HackRank_Day2 {
+public class Arithmetic {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

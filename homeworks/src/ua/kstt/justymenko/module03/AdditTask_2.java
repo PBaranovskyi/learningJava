@@ -16,26 +16,26 @@ public class AdditTask_2 {
 
         Scanner scan = new Scanner(System.in);
                     /* Declare second integer, double, and String variables. */
-        int _int;
-        double _double;
-        String _string;
+        int intValue;
+        double doubleValue;
+        String stringValue;
 
         /* Read and save an integer, double, and String to your variables.*/
         // Note: If you have trouble reading the entire String, please go back and review the Tutorial closely.
-        _int = scan.nextInt();
-        _double = scan.nextDouble();
+        intValue = scan.nextInt();
+        doubleValue = scan.nextDouble();
         scan.nextLine();
-        _string = scan.nextLine();
+        stringValue = scan.nextLine();
 
         /* Print the sum of both integer variables on a new line. */
-        System.out.println(i + _int);
+        System.out.println(i + intValue);
 
         /* Print the sum of the double variables on a new line. */
-        System.out.println(d + _double);
+        System.out.println(d + doubleValue);
 
         /* Concatenate and print the String variables on a new line;
         	the 's' variable above should be printed first. */
-        System.out.println(s + _string);
+        System.out.println(s + stringValue);
 
 
         scan.close();

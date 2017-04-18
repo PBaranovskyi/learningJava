@@ -1,11 +1,14 @@
 package ua.kstt.justymenko.module03;
 
+import java.util.Scanner;
+
 /**
  * Created by n1kropol on 4/11/17.
  */
 public class LW_155_Sum_Avg {
     public static void main(String[] args) {
-        int num = 42;
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
         int sum = 0;
 
         for (int i = 0; i < num; i++) {

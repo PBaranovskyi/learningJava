@@ -5,10 +5,10 @@ import java.util.Scanner;
 /**
  * Created by n1kropol on 4/14/17.
  */
-public class HackRank_Day4 {
+public class Person {
     private int age;
 
-    public HackRank_Day4(int initialAge) {
+    public Person(int initialAge) {
         // Add some more code to run some checks on initialAge
         if (initialAge < 0) {
             age = 0;
@@ -39,7 +39,7 @@ public class HackRank_Day4 {
         int T = sc.nextInt();
         for (int i = 0; i < T; i++) {
             int age = sc.nextInt();
-            HackRank_Day4 p = new HackRank_Day4(age);
+            Person p = new Person(age);
             p.amIOld();
             for (int j = 0; j < 3; j++) {
                 p.yearPasses();

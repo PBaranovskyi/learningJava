@@ -8,11 +8,17 @@ import java.util.Scanner;
 public class LW_156_Square {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
-        int result = 0;
-        for (int i = 1; i <= num; i++)
-            result += i * i;
-        System.out.println(result);
+        String num = scanner.nextLine();
         scanner.close();
+
+        int result = 0;
+        for (int i = 0; i <= num.length()-1; i++){
+            char letter = num.charAt(i);
+            int square = Integer.parseInt(String.valueOf(letter)) * Integer.parseInt(String.valueOf(letter));
+            result += square;
+        }
+
+        System.out.println(result);
+
     }
 }
