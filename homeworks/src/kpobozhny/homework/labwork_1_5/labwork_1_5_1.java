@@ -21,7 +21,7 @@ public class labwork_1_5_1 {
     public static void main(String[] args) {
 
         for (int i = 1; i < 9; i++) {
-            for (int j = i; j > 0 ; j--) {
+            for (int j = i; j > 0; j--) {
                 System.out.print(j + " ");
             }
             System.out.println();

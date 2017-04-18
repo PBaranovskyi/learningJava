@@ -20,36 +20,58 @@ public class labwork_1_5_2 {
 
         int x;
         String inputString;
-        boolean enteredCorrectValue=false;
+        boolean enteredCorrectValue = false;
         Scanner scan = new Scanner(System.in);
 
-        do{
+        do {
             System.out.print("Enter number x: ");
             inputString = scan.nextLine();
 
             try {
                 x = Integer.parseInt(inputString);
-                switch (x){
-                    case 1: System.out.println("One");break;
-                    case 2: System.out.println("Two");break;
-                    case 3: System.out.println("Three");break;
-                    case 4: System.out.println("Four");break;
-                    case 5: System.out.println("Five");break;
-                    case 6: System.out.println("Six");break;
-                    case 7: System.out.println("Seven");break;
-                    case 8: System.out.println("Eight");break;
-                    case 9: System.out.println("Nine");break;
-                    default: if(x>9){System.out.println("Other"); }
-                    //it was not described in the task what should be done if we have a negative number (x<1), so let's do nothing.
+                String strNumber = "";
+                switch (x) {
+                    case 1:
+                        strNumber = "One";
+                        break;
+                    case 2:
+                        strNumber = "Two";
+                        break;
+                    case 3:
+                        strNumber = "Three";
+                        break;
+                    case 4:
+                        strNumber = "Four";
+                        break;
+                    case 5:
+                        strNumber = "Five";
+                        break;
+                    case 6:
+                        strNumber = "Six";
+                        break;
+                    case 7:
+                        strNumber = "Seven";
+                        break;
+                    case 8:
+                        strNumber = "Eight";
+                        break;
+                    case 9:
+                        strNumber = "Nine";
+                        break;
+                    default:
+                        if (x > 9) {
+                            strNumber = "Other";
+                        }
+                        //it was not described in the task what should be done if we have a negative number (x<1), so let's do nothing.
                 }
-
+                System.out.println(strNumber);
                 // set exit condition
-                enteredCorrectValue=true;
+                enteredCorrectValue = true;
             } catch (NumberFormatException e) {
                 System.out.println("Invalid value. Try again.");
             }
 
-        }while(!enteredCorrectValue);
+        } while (!enteredCorrectValue);
 
         scan.close();
     }

@@ -14,13 +14,13 @@ import java.util.Scanner;
 public class labwork_1_5_5 {
 
     public static void main(String[] args) {
-        int n, sum=0;
+        int n, sum = 0;
         double avg;
         String inputString;
-        boolean enteredCorrectValue=false;
+        boolean enteredCorrectValue = false;
         Scanner scan = new Scanner(System.in);
 
-        do{
+        do {
             System.out.print("Enter number n: ");
             inputString = scan.nextLine();
 
@@ -29,24 +29,24 @@ public class labwork_1_5_5 {
 
                 // calculate SUM
                 for (int i = 0; i < n; i++) {
-                    sum+=i;
+                    sum += i;
                 }
 
                 // calculate AVG
-                avg=(double)sum/n;
+                avg = (double) sum / n;
 
                 // print result
-                System.out.println("The Sum is:"+sum);
-                System.out.println("The Avg is:"+avg);
+                System.out.println("The Sum is:" + sum);
+                System.out.println("The Avg is:" + avg);
 
                 // set exit condition
-                enteredCorrectValue=true;
+                enteredCorrectValue = true;
 
             } catch (NumberFormatException e) {
                 System.out.println("Invalid value. Try again.");
             }
 
-        }while(!enteredCorrectValue);
+        } while (!enteredCorrectValue);
 
         scan.close();
     }

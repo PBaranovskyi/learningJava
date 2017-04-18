@@ -14,46 +14,46 @@ import java.util.Scanner;
 public class labwork_1_5_7 {
 
     public static void main(String[] args) {
-        int n, sum=0;
+        int n, sum = 0;
         String inputString;
-        boolean enteredCorrectValue=false;
+        boolean enteredCorrectValue = false;
         Scanner scan = new Scanner(System.in);
 
-        do{
+        do {
             System.out.print("Enter number n: ");
             inputString = scan.nextLine();
 
             try {
                 n = Integer.parseInt(inputString);
 
-                if(n>1) {
+                if (n > 1) {
 
                     for (int i = 1; i <= n; i++) {
 
                         for (int j = 1; j < i; j++) {
 
-                            if(i%j==0){
-                                sum+=j;
+                            if (i % j == 0) {
+                                sum += j;
                             }
 
                         }
 
-                        if(i==sum){
+                        if (i == sum) {
                             System.out.println(i);
                         }
-                        sum=0;
+                        sum = 0;
                     }
 
                 }
 
                 // set exit condition
-                enteredCorrectValue=true;
+                enteredCorrectValue = true;
 
             } catch (NumberFormatException e) {
                 System.out.println("Invalid value. Try again.");
             }
 
-        }while(!enteredCorrectValue);
+        } while (!enteredCorrectValue);
 
         scan.close();
     }

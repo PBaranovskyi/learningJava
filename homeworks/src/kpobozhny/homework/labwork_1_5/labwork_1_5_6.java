@@ -12,38 +12,38 @@ import java.util.Scanner;
 public class labwork_1_5_6 {
 
     public static void main(String[] args) {
-        int n, sum=0;
+        int n, sum = 0;
         String inputString;
-        boolean enteredCorrectValue=false;
+        boolean enteredCorrectValue = false;
         Scanner scan = new Scanner(System.in);
 
-        do{
+        do {
             System.out.print("Enter number n: ");
             inputString = scan.nextLine();
 
             try {
                 n = Integer.parseInt(inputString);
-                n=Math.abs(n);
+                n = Math.abs(n);
 
                 // calculate SUM
                 for (int i = 0; i < inputString.length(); i++) {
-                    sum+=Math.pow(Character.getNumericValue(inputString.charAt(i)),2);
+                    sum += Math.pow(Character.getNumericValue(inputString.charAt(i)), 2);
                 }
 
                 // print result
-                System.out.println("The Sum is:"+sum);
+                System.out.println("The Sum is:" + sum);
 
                 // set exit condition
-                enteredCorrectValue=true;
+                enteredCorrectValue = true;
 
             } catch (NumberFormatException e) {
                 System.out.println("Invalid value. Try again.");
             }
 
-        }while(!enteredCorrectValue);
+        } while (!enteredCorrectValue);
 
         scan.close();
     }
-    }
+}
 
 

@@ -17,9 +17,9 @@ package kpobozhny.homework.labwork_1_5;
 public class labwork_1_5_4 {
 
     public static void main(String[] args) {
-        int counter=0;
+        int counter = 0;
         for (int i = 1; i < 300; i++) {
-            if((counter<10)&((i%3==0)||(i%4==0))){
+            if ((counter < 10) & ((i % 3 == 0) || (i % 4 == 0))) {
                 System.out.println(i);
                 counter++;
             }
