@@ -7,10 +7,10 @@ public class LabWork151 {
     public static void main(String[] args) {
         int a;
         int b;
-        for (b=0; b<=8; b++){
-          for (a=1; a<=b; a++) {
-              System.out.print(a);
-          }
+        for (b = 0; b <= 8; b++) {
+            for (a = 1; a <= b; a++) {
+                System.out.print(a);
+            }
             System.out.println("");
         }
     }
