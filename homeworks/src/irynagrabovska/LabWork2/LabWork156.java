@@ -11,10 +11,10 @@ public class LabWork156 {
         Scanner scan = new Scanner(System.in);
         int userNumber = scan.nextInt();
         int sum = 0;
-            while (userNumber > 0){
-                sum += Math.pow(userNumber%10, 2);
-                userNumber /= 10;
-                }
-                System.out.println("Sum of squares of digits of your number is " + sum);
+        while (userNumber > 0) {
+            sum += Math.pow(userNumber % 10, 2);
+            userNumber /= 10;
+        }
+        System.out.println("Sum of squares of digits of your number is " + sum);
     }
 }

@@ -1,5 +1,7 @@
 package irynagrabovska.LabWork2;
+
 import java.util.Scanner;
+
 /**
  * Created bb whisper on 14-Apr-17.
  */
