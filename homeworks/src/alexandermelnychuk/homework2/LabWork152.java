@@ -48,6 +48,9 @@ public class LabWork152 {
                 case 9:
                     str = "Nine";
                     break;
+                default:
+                    str = "I don't know - \"What if x <=0?\"";
+                    break;
             }
         } else str = "Other";
 
