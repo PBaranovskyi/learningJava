@@ -1,10 +1,12 @@
 package vkochergin.module1.example.Homework3;
 
+import java.util.Scanner;
+
 /**
  * Created by Volodymyr Kochergin on 14.04.2017.
  */
 public class HackerRankDay4 {
-    public class Person {
+    public static class Person {
         private int age;
 
         public Person(int initialAge) {
@@ -33,5 +35,21 @@ public class HackerRankDay4 {
             age++;
         }
 
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        for (int i = 0; i < T; i++) {
+            int age = sc.nextInt();
+            Person p = new Person(age);
+            p.amIOld();
+            for (int j = 0; j < 3; j++) {
+                p.yearPasses();
+            }
+            p.amIOld();
+            System.out.println();
+        }
+        sc.close();
     }
 }
