@@ -1,4 +1,4 @@
-package evgeniyderkachenko.module1;
+package evgeniyderkachenko.module1.labWork1;
 
 /**
  * Created by Derkachenko on 09.04.2017.
