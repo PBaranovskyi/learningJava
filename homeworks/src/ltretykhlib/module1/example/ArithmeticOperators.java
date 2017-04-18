@@ -10,10 +10,10 @@ public class ArithmeticOperators {
         int b = 15703;
 
         int sum = a + b;
-        int subs = a-b;
-        int div=a/b;
-        int mult=a*b;
-        int rest=a%b;
+        int subs = a - b;
+        int div = a / b;
+        int mult = a * b;
+        int rest = a % b;
 
         System.out.println("Sum: " + sum);
         System.out.println("Subs: " + div);

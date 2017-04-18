@@ -8,7 +8,7 @@ public class PrimitiveDataTypes {
         int i = 10000;
         short s = 1000;
         double d = 101.2;
-        float f = 100.1f;
+        float f = 100.1F;
         byte b = 10;
         long l = 100000L;
         char c = 'c';
