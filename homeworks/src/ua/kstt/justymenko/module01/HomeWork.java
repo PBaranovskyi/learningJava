@@ -5,6 +5,9 @@ package ua.kstt.justymenko.module01;
  */
 public class HomeWork {
     public static void main(String[] args) {
+        int some = 3;
+        some %= 10;
+        System.out.println(some);
         System.out.println("Module01 HomeWork");
     }
 }
