@@ -51,7 +51,6 @@ public class HW1 {
     public static void labWork142() {
         int a = 2;
         int b = 5;
-        System.out.println();
         System.out.println("+: " + (a + b));
         System.out.println("-: " + (a - b));
         System.out.println("/: " + (double) a / b);
