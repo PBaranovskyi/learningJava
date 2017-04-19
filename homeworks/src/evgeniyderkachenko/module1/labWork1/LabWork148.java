@@ -18,9 +18,9 @@ public class LabWork148 {
         System.out.println("b=" + ((short) b));
         System.out.println("s=" + ((long) s));
         System.out.println("a=" + ((long) a));
-        System.out.println("l=" + ((int) s)); //тут можно потерять данные
+        System.out.println("l=" + ((int) s));
         System.out.println("f=" + ((double) f));
-        System.out.println("d=" + ((long) d));
+        System.out.println("d=" + ((long) d));  //тут можно потерять данные
         System.out.println("c=" + ((byte) c));
 
     }
