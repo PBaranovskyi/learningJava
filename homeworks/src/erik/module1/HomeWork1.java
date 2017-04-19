@@ -3,9 +3,8 @@ package erik.module1;
 /**
  * Created by Erik Pavliuk on 03/04/2017.
  */
-public class  HomeWork1{
+public class HomeWork1 {
     boolean some;
-
 
 
     public static void main(String[] args) {

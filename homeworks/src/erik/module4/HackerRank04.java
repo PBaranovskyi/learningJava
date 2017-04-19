@@ -5,21 +5,20 @@ import java.util.Scanner;
 /**
  * Created by Erik Pavliuk on 15/04/2017.
  */
-public class Person {
+public class HackerRank04 {
 
     private int age;
 
-    public Person(int initialAge) {
+    public HackerRank04(int initialAge) {
         if (initialAge <= 0) {
             age = 0;
             System.out.println("Age is not valid, setting age to 0.");
-        }
-        else
+        } else
             age = initialAge;
     }
 
     public void amIOld() {
-        if (age<13)
+        if (age < 13)
             System.out.println("You are young.");
         else if (age >= 13 && age < 18)
             System.out.println("You are a teenager.");
@@ -36,7 +35,7 @@ public class Person {
         int T = sc.nextInt();
         for (int i = 0; i < T; i++) {
             int age = sc.nextInt();
-            Person p = new Person(age);
+            HackerRank04 p = new HackerRank04(age);
             p.amIOld();
             for (int j = 0; j < 3; j++) {
                 p.yearPasses();

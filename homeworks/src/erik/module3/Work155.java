@@ -11,11 +11,11 @@ public class Work155 {
         System.out.println("Please enter the number :");
         Scanner s = new Scanner(System.in);
         int str = s.nextInt();
-        int a=0;
-        for (double i=1; i<=str; i++){
-            a+=i;
+        int a = 0;
+        for (double i = 1; i <= str; i++) {
+            a += i;
             System.out.println("The sum is: " + a);
-            System.out.println("The avg is: " + a/i);
+            System.out.println("The avg is: " + a / i);
         }
     }
-    }
+}

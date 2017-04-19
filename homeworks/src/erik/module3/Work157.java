@@ -10,7 +10,7 @@ public class Work157 {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the number: ");
         int number = s.nextInt();
-        for (int i=2; i<number; i++) {
+        for (int i = 2; i < number; i++) {
             int result = 0;
             for (int k = 1; k < i; k++)
                 if (i % k == 0)
