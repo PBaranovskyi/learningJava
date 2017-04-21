@@ -15,7 +15,7 @@ public class LabWork157 {
             double f = a % i;
             if (f == 0) {
                 k = k + i;
-                System.out.println(k);
+                System.out.println("Delitel = " + i + " summa delitelei =" + k);
             }
         }
     }

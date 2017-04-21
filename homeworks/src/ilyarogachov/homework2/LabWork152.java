@@ -25,7 +25,8 @@ public class LabWork152 {
                 monthString = "Three";
                 System.out.println(monthString);
                 break;
-            default: monthString = "Other";
+            default:
+                monthString = "Other";
                 System.out.println(monthString);
                 break;
 

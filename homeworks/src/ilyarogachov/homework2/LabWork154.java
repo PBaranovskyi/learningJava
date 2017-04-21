@@ -11,18 +11,12 @@ public class LabWork154 {
             k = i;
             int a = i % 3;
             int b = k % 4;
-            if (a == 0) {
+            if (a == 0 && num < 10) {
                 System.out.println(i);
                 num++;
-                if (num == 30) {
-                    break;
-                }
-            } else if (b == 0) {
+            } else if (b == 0 && num < 10) {
                 System.out.println(i);
                 num++;
-                if (num == 30) {
-                    break;
-                }
             }
         }
     }

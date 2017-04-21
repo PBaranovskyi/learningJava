@@ -14,8 +14,11 @@ public class LabWork156 {
         int a = scan.nextInt();
         String n;
         int len = 2;
+        double summ = 0;
         while (len >= 1) {
             int f = a % 10;
+            double kv = Math.pow(f, 2);
+            summ = summ + kv;
             System.out.println(Math.pow(f, 2));
             if (len == 1) {
                 break;
@@ -24,6 +27,6 @@ public class LabWork156 {
             n = Integer.toString(a);
             len = n.length();
         }
-
+        System.out.println("Summa = " + summ);
     }
 }
