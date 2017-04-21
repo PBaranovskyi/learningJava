@@ -17,6 +17,7 @@ public class Solution {
             int phone = in.nextInt();
             dicMap.put(name, phone);
         }
+
         while(in.hasNext()){
             String s = in.next();
             if (dicMap.get(s) != null){
