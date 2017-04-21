@@ -1,30 +1,32 @@
-package oleksanderkrasilnikov.hakerrank.Day4;
+package ua.kstt.justymenko.module03;
 
 import java.util.Scanner;
 
+/**
+ * Created by n1kropol on 4/14/17.
+ */
 public class Person {
     private int age;
 
     public Person(int initialAge) {
         // Add some more code to run some checks on initialAge
         if (initialAge < 0) {
-            this.age = 0;
+            age = 0;
             System.out.println("Age is not valid, setting age to 0.");
-        } else {
-            this.age = initialAge;
-        }
+        } else
+            age = initialAge;
     }
 
     public void amIOld() {
         // Write code determining if this person's age is old and print the correct statement:
-        if (age < 13) {
-            System.out.println("You are young.");
-        } else if (age >= 13 && age < 18) {
-            System.out.println("You are a teenager.");
-        } else {
-            System.out.println("You are old.");
-        }
-
+        String statement;
+        if (age < 13)
+            statement = "You are young.";
+        else if (age >= 13 && age < 18)
+            statement = "You are a teenager.";
+        else
+            statement = "You are old.";
+        System.out.println(statement);
     }
 
     public void yearPasses() {
