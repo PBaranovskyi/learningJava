@@ -11,7 +11,7 @@ public class Animal {
         this.name = name;
         this.food = food;
     }
-    
+
     public void feed() {
         System.out.println(name + " eats " + food);
     }
