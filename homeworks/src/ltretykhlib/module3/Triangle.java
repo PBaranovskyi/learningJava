@@ -26,27 +26,24 @@ public class Triangle {
         if (abLength() + bcLength() == acLength() || abLength() + acLength() == bcLength() || bcLength() + acLength() == abLength()) {
             System.out.println("Triangle's tops on one line, enter another values");
         } else {
-            System.out.println("good ");
+            System.out.println("Good triangle");
 
         }
     }
 
     public double abLength() {
         double abLengthCalculated = sqrt(pow(Bx - Ax, 2) + pow(By - Ay, 2));
-        System.out.println(abLengthCalculated);
         return abLengthCalculated;
     }
 
     public double acLength() {
         double acLengthCalculated = sqrt(pow(Cx - Ax, 2) + pow(Cy - Ay, 2));
-        System.out.println(acLengthCalculated);
         return acLengthCalculated;
     }
 
 
     public double bcLength() {
         double bcLengthCalculated = sqrt(pow(Cx - Bx, 2) + pow(Cy - By, 2));
-        System.out.println(bcLengthCalculated);
         return bcLengthCalculated;
     }
 
@@ -59,8 +56,6 @@ public class Triangle {
 
     public double square() {
         double halfOfPerimeter = perimeter() / 2;
-        double test = sqrt(halfOfPerimeter * (halfOfPerimeter - abLength()));
-        System.out.println("______" + test);
         double triangleSquare = sqrt(halfOfPerimeter * (halfOfPerimeter - abLength()) * (halfOfPerimeter - acLength()) * (halfOfPerimeter - bcLength()));
         System.out.println("Square: " + triangleSquare);
         return triangleSquare;
