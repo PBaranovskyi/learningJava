@@ -2,10 +2,6 @@ package ua.kstt.justymenko.module04;
 
 /**
  * Created by n1kropol on 4/22/17.
- * Конвертація валюти.Створити клас з методом convert(),
- * в якого буде в конструтор прийматися на вхід курс валюти і метод,
- * який братиме на вхід суму гривень, і повертатиме суму доларів,
- * яку можна отримати по даному курсу.
  */
 public class CurrencyConvertator {
     private double currencyRate;
