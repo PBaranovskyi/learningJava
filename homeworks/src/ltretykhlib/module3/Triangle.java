@@ -26,8 +26,9 @@ public class Triangle {
         if (abLength() + bcLength() == acLength() || abLength() + acLength() == bcLength() || bcLength() + acLength() == abLength()) {
             System.out.println("Triangle's tops on one line, enter another values");
         } else {
-            System.out.println("Good triangle");
-
+            System.out.println(abLength());
+            System.out.println(acLength());
+            System.out.println(bcLength());
         }
     }
 
