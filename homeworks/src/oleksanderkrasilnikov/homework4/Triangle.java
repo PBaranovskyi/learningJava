@@ -13,9 +13,9 @@ public class Triangle {
     private double c1;
     private double c2;
 
-    private double A ;//sideAB
-    private double B ;//sideAC
-    private double C ;//sideBC
+    private double A;//sideAB
+    private double B;//sideAC
+    private double C;//sideBC
 
     public Triangle() {
         System.out.println("Specify the coordinates of the vertex of the triangle");
@@ -58,6 +58,10 @@ public class Triangle {
         return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
     }
 
+    public void trianglePerimeter() {
+        System.out.println("This triangle perimeter is = " + (A + B + C));
+    }
+
     public void triangleArea() {
         double p = (0.5 * (A + B + C));
         System.out.println("This triangle area is = " + sqrt(p * (p - A) * (p - B) * (p - C)));
@@ -86,8 +90,9 @@ public class Triangle {
         //triangle.triangleView();
         //triangle.triangleArea();
 
-        Triangle triangle2 = new Triangle(1,1,3,1,3,4);
+        Triangle triangle2 = new Triangle(1, 1, 3, 1, 3, 4);
         triangle2.triangleView();
+        triangle2.trianglePerimeter();
         triangle2.triangleArea();
     }
 
