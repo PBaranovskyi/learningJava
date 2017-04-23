@@ -85,9 +85,9 @@ public class Triangle {
     }
 
     public double getPerimeter() {
-        return getSideLength(getVertexA(), getVertexB()) +
-                getSideLength(getVertexB(), getVertexC()) +
-                getSideLength(getVertexC(), getVertexA());
+        return getSideLength(A, B) +
+                getSideLength(B, C) +
+                getSideLength(C, A);
     }
 
     // Heron's formula
@@ -95,9 +95,9 @@ public class Triangle {
         double semiPerimeter = getPerimeter() / 2;
 
         return Math.sqrt(semiPerimeter *
-                (semiPerimeter - getSideLength(getVertexA(), getVertexB())) *
-                (semiPerimeter - getSideLength(getVertexB(), getVertexC())) *
-                (semiPerimeter - getSideLength(getVertexC(), getVertexA())));
+                (semiPerimeter - getSideLength(A, B)) *
+                (semiPerimeter - getSideLength(B, C)) *
+                (semiPerimeter - getSideLength(C, A)));
     }
 
     public static void main(String[] args) {
