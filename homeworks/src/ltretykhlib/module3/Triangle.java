@@ -22,6 +22,54 @@ public class Triangle {
         Cy = cyTop;
     }
 
+    public void setAx(double ax) {
+        Ax = ax;
+    }
+
+    public void setAy(double ay) {
+        Ay = ay;
+    }
+
+    public void setBx(double bx) {
+        Bx = bx;
+    }
+
+    public void setBy(double by) {
+        By = by;
+    }
+
+    public void setCx(double cx) {
+        Cx = cx;
+    }
+
+    public void setCy(double cy) {
+        Cy = cy;
+    }
+
+    public double getAx() {
+        return Ax;
+    }
+
+    public double getAy() {
+        return Ay;
+    }
+
+    public double getBx() {
+        return Bx;
+    }
+
+    public double getCx() {
+        return Cx;
+    }
+
+    public double getBy() {
+        return By;
+    }
+
+    public double getCy() {
+        return Cy;
+    }
+
     public void view() {
         if (abLength() + bcLength() == acLength() || abLength() + acLength() == bcLength() || bcLength() + acLength() == abLength()) {
             System.out.println("Triangle's tops on one line, enter another values");
