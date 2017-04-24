@@ -46,38 +46,12 @@ public class Triangle {
         Cy = cy;
     }
 
-    public double getAx() {
-        return Ax;
-    }
-
-    public double getAy() {
-        return Ay;
-    }
-
-    public double getBx() {
-        return Bx;
-    }
-
-    public double getCx() {
-        return Cx;
-    }
-
-    public double getBy() {
-        return By;
-    }
-
-    public double getCy() {
-        return Cy;
-    }
 
     public void view() {
-        if (abLength() + bcLength() == acLength() || abLength() + acLength() == bcLength() || bcLength() + acLength() == abLength()) {
-            System.out.println("Triangle's tops on one line, enter another values");
-        } else {
-            System.out.println(abLength());
-            System.out.println(acLength());
-            System.out.println(bcLength());
-        }
+        System.out.println(abLength());
+        System.out.println(acLength());
+        System.out.println(bcLength());
+
     }
 
     public double abLength() {
@@ -110,4 +84,15 @@ public class Triangle {
         return triangleSquare;
     }
 
+    public void updateTops(double ax, double ay, double bx, double by, double cx, double cy) {
+        setAx(ax);
+        setAy(ay);
+        setBx(bx);
+        setBy(by);
+        setCx(cx);
+        setCy(cy);
+        if (abLength() + bcLength() == acLength() || abLength() + acLength() == bcLength() || bcLength() + acLength() == abLength()) {
+            System.out.println("Triangle's tops on one line, enter another values");
+        }
+    }
 }

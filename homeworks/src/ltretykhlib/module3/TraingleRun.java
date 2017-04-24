@@ -5,9 +5,10 @@ package ltretykhlib.module3;
  */
 public class TraingleRun {
     public static void main(String[] args) {
-        Triangle newTriangle=new Triangle(2,3,0,1,4,1);
+        Triangle newTriangle=new Triangle(2,3,1,1,4,1);
         newTriangle.view();
         newTriangle.perimeter();
         newTriangle.square();
+        newTriangle.updateTops(2,3,0,1,4,5);
     }
 }
