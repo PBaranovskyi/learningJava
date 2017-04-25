@@ -13,5 +13,4 @@ public class LW_161_ArrayLoop {
             System.out.print(arr[i] + " ");
         }
     }
-
 }
