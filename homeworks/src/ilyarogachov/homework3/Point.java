@@ -4,14 +4,16 @@ package ilyarogachov.homework3;
  * Created by Tom on 24.04.2017.
  */
 
-public class Points {
+public class Point {
     private double a = 0;
     private double b = 0;
 
-    Points(double a, double b) {
+    Point(double a, double b) {
         this.a = a;
         this.b = b;
     }
+
+
 
     public double getPointa() {
         return this.a;
