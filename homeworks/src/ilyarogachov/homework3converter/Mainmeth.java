@@ -7,7 +7,7 @@ public class Mainmeth {
     public static void main(String[] args) {
         Calculate c = new Calculate();
         double usd = c.hrivnausd("Hrivna", 5400.0);
-        System.out.println(usd);
+        System.out.println("Summa USD = " + usd);
     }
 
 
