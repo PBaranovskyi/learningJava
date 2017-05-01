@@ -9,13 +9,13 @@ import java.util.Random;
 public class LW_167_FindAreas {
     public static void main(String[] args) {
         int iDimension = 4;
-        int jDimension = 5;
+        int jDimension = 25;
         int[][] matrix = new int[iDimension][jDimension];
         int finder = 1;
         Random random = new Random();
         for (int i = 0; i < iDimension; i++) {
             for (int j = 0; j < jDimension; j++) {
-                matrix[i][j] = random.nextInt(jDimension) + 1;
+                matrix[i][j] = random.nextInt(3) + 1;
             }
             System.out.println(Arrays.toString(matrix[i]));
         }
@@ -43,6 +43,7 @@ public class LW_167_FindAreas {
                     prefix = ",";
                     isRepeated = false;
                     j = end + 1;
+                    isBeginSet = false;
                 }
                 if (j < matrix[i].length && matrix[i][j] == finder) {
                     builder.append(prefix);
