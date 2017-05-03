@@ -26,7 +26,6 @@ public class UseArrays {
             }
         }
 
-
         for (int item : intArray) {
 
             System.out.println(item);
