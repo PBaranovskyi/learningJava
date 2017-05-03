@@ -97,19 +97,4 @@ public class LabWork_1_6_7 {
         }
         return "[" + outString + "]";
     }
-
-    public static int[] addResultToArray(int[] inputArray, int value) {
-        if (inputArray[inputArray.length] == 0) {
-            for (int i = inputArray.length; i >= 0; i++) {
-                if (inputArray[i] != 0) {
-                    inputArray[i + 1] = value;
-                    return inputArray;
-                }
-            }
-        }
-
-        int[] newArray = Arrays.copyOf(inputArray, inputArray.length + 1);
-        newArray[inputArray.length] = value;
-        return newArray;
-    }
 }
