@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class LabWork_1_6_7 {
     public static void main(String[] args) {
-        int[][] matrix = new int[4][5];
+        int[][] matrix = new int[4][20];
 
         Random random = new Random();
 
@@ -48,6 +48,7 @@ public class LabWork_1_6_7 {
 
             int[] line = new int[foundedCount];
             int lineCount = 0;
+            String lineString = "";
             for (int x = 0; x < founded.length; x++) {
                 if (founded[x] != -1) {
                     line[lineCount] = founded[x];
@@ -55,10 +56,60 @@ public class LabWork_1_6_7 {
                 }
             }
 
+            if (line.length > 2) {
+                //System.out.println("start preparing line " + i);
+                lineString = prepareArrayString(line);
+            } else {
+                lineString = Arrays.toString(line);
+            }
+
             for (int x = 0; x < line.length; x++) {
 
             }
-            System.out.println("Line" + i + ": " + Arrays.toString(line));
+            System.out.println("Line" + i + ": " + lineString);
         }
+    }
+
+    private static String prepareArrayString(int[] line) {
+        int y = 0;
+        String outString = "";
+
+        while (y < line.length) {
+            int start = line[y], end = line[y];
+            for (int i = y; i < line.length; i++) {
+                if (i + 2 <= line.length && end == (line[i + 1] - 1)) {
+                    end = line[i + 1];
+                    y = i;
+                } else {
+                    y = i;
+                    break;
+                }
+            }
+            if (outString.length() != 0 && outString.lastIndexOf(",") != outString.length()) {
+                outString = outString + ",";
+            }
+            if (start != end && start != end - 1) {
+                outString = outString + start + "-" + end;
+            } else {
+                outString = outString + line[y];
+            }
+            y++;
+        }
+        return "[" + outString + "]";
+    }
+
+    public static int[] addResultToArray(int[] inputArray, int value) {
+        if (inputArray[inputArray.length] == 0) {
+            for (int i = inputArray.length; i >= 0; i++) {
+                if (inputArray[i] != 0) {
+                    inputArray[i + 1] = value;
+                    return inputArray;
+                }
+            }
+        }
+
+        int[] newArray = Arrays.copyOf(inputArray, inputArray.length + 1);
+        newArray[inputArray.length] = value;
+        return newArray;
     }
 }
