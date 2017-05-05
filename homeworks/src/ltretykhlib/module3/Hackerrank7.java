@@ -17,17 +17,10 @@ public class Hackerrank7 {
         }
 
         in.close();
-        for (int i = 0; i < n / 2; i++) {
-            int temp = arr[i];
-            arr[i] = arr[n - i - 1];
-            arr[n - i - 1] = temp;
 
-        }
-        // Arrays.stream(arr).forEach(System.out::print);
-        //System.out.println(Arrays.toString(arr));
 
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.println(arr[i]);
         }
 
 
