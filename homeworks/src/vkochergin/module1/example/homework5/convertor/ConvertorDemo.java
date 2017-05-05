@@ -5,7 +5,7 @@ package vkochergin.module1.example.homework5.convertor;
  */
 public class ConvertorDemo {
     public static void main(String[] args) {
-        CurrencyConvertor convertor = new CurrencyConvertor(1.256, 26.4);
+        CurrencyConvertor convertor = new CurrencyConvertor(26.4);
         convertor.convert();
     }
 }

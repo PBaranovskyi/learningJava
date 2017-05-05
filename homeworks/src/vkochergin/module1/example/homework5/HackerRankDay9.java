@@ -7,16 +7,11 @@ import java.util.Scanner;
  */
 public class HackerRankDay9 {
 
-    public static int Factorial(int n){
-        if (n <= 1){
-
+    public static int Factorial(int n) {
+        if (n <= 1) {
             return 1;
-
-        }
-        else{
-
+        } else {
             return n * Factorial(n - 1);
-
         }
     }
 

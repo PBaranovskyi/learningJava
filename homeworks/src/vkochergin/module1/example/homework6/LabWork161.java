@@ -11,18 +11,12 @@ public class LabWork161 {
 
         int count = 1;
         for (int i = 0; i < myArray.length; i++) {
-
             myArray[i] = count * 2;
             count++;
-
-
         }
 
         for (int i = 0; i < myArray.length; i++) {
-
             System.out.println(myArray[i]);
-
         }
     }
-
 }
