@@ -9,32 +9,24 @@ public class HackerRankDay6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int t = scanner.nextInt();
+        scanner.nextLine();
 
-        while (t > 0) {
 
-            String s = scanner.next();
-
-            for (int i = 0; i < s.length(); i++) {
-
-                if (i % 2 == 0) {
-
-                    System.out.print(s.charAt(i));
+        for (int i = 0; i < t; i++) {
+            String string = scanner.nextLine();
+            String first = "";
+            String second = "";
+            for (int j = 0; j < string.length(); j++) {
+                if (j % 2 == 0){
+                    first = first + string.charAt(j);
+                }
+                else {
+                    second = second + string.charAt(j);
                 }
             }
-
-            System.out.print(" ");
-
-            for (int i = 0; i < s.length(); i++) {
-
-                if (i % 2 == 1) {
-
-                    System.out.print(s.charAt(i));
-                }
-            }
-
-            t -= 1;
-
-            System.out.println();
+            System.out.println(first + " " + second);
         }
+
+
     }
 }
