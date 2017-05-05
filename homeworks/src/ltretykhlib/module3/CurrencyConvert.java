@@ -6,6 +6,6 @@ package ltretykhlib.module3;
 public class CurrencyConvert {
     public static void main(String[] args) {
         Currency cur = new Currency(27.25);
-        cur.convert(27250);
+        cur.convert(27258);
     }
 }

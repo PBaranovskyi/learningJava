@@ -31,9 +31,6 @@ public class Hackerrank7 {
         }
 
 
-        for (int el : arr) {
-            System.out.println("__________" + el);
-        }
     }
 }
 

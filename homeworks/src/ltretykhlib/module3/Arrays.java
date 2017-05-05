@@ -10,10 +10,9 @@ public class Arrays {
             System.out.println(i);
 
 
-
         }
-        for (int i = 0; i < intArray.length; i=i+2) {
-            int item=intArray[i];
+        for (int i = 0; i < intArray.length; i = i + 2) {
+            int item = intArray[i];
             System.out.println("Index " + i);
             System.out.println("Array element " + intArray[i]);
         }
