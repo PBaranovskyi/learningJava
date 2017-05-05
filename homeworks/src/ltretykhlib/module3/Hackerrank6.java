@@ -10,19 +10,18 @@ public class Hackerrank6 {
         Scanner sc = new Scanner(System.in);
         int q = sc.nextInt();
         sc.nextLine();
-        for (int i=0; i<=q; i++) {
-            String str=sc.nextLine();
-            int counter = 0, t1 = 0, t2 = 0;
+        for (int i = 0; i <= q; i++) {
+            String str = sc.nextLine();
+            int t1 = 0, t2 = 0;
             char[] temp = new char[str.length()];
             char[] temp2 = new char[str.length()];
-            for (int l = 0; l < str.length(); l++) {
-                str.charAt(l);
-                counter++;
-                if (counter % 2 != 0) {
-                    temp[t1] = str.charAt(l);
+            for (int j = 0; j < str.length(); j++) {
+                str.charAt(j);
+                if (j % 2 != 0) {
+                    temp[t1] = str.charAt(j);
                     t1++;
                 } else {
-                    temp2[t2] = str.charAt(l);
+                    temp2[t2] = str.charAt(j);
                     t2++;
                 }
 
