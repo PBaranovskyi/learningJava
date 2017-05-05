@@ -1,4 +1,4 @@
-package vkochergin.module1.example.homework7;
+package vkochergin.module1.example.homework7.hackerrankday11;
 
 import java.util.Scanner;
 
