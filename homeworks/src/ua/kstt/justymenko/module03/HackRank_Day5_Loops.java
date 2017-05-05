@@ -12,7 +12,8 @@ public class HackRank_Day5_Loops {
             int n = in.nextInt();
 
             for (int i = 1; i < 11; i++) {
-                System.out.println(n + " x " + i + " = " + n * i);
+                System.out.printf("%2d x %-2d = %2d %n", n, i, n * i);
+//                System.out.println(n + " x " + i + " = " + n * i);
             }
 
         }
