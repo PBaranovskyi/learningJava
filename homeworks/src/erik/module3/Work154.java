@@ -9,11 +9,11 @@ public class Work154 {
         for (int i = 3; i < 300; i++) {
             int three = i % 3;
             int four = i % 4;
-            if (three == 0 || four == 0){
-                System.out.println(x +" : "+ i);
-                x+=1;
-            if (x>10)
-                break;
+            if (three == 0 || four == 0) {
+                System.out.println(x + " : " + i);
+                x += 1;
+                if (x > 10)
+                    break;
             }
         }
     }

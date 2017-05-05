@@ -7,7 +7,7 @@ public class Work141 {
     public static void main(String[] args) {
         byte number1 = 12;
         short number2 = 10001;
-        int number3 = 685*112;
+        int number3 = 685 * 112;
         long number4 = 8723;
         float number5 = 234.23523523F; // почему не могу записать число с плавающей точкой?
         double number6 = 325.235325;
