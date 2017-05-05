@@ -13,7 +13,7 @@ public class Task_1_6_2 {
 
         for (int i = 0; i < m.length; i++) {
             sum = sum + m[i];
-            if (m[i] > maximum ) {
+            if (m[i] > maximum) {
                 maximum = m[i];
             } else if (m[i] < minimum) {
                 minimum = m[i];
