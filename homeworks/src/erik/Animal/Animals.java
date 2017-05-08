@@ -7,7 +7,7 @@ public class Animals {
     private String name;
     private String foodname;
 
-    public Animals(String name, String foodname){
+    public Animals(String name, String foodname) {
         this.name = name;
         this.foodname = foodname;
     }
@@ -16,7 +16,8 @@ public class Animals {
     public void setName(String name) {
         this.name = name;
     }
-    public void setFoodname(String foodname){
+
+    public void setFoodname(String foodname) {
         this.foodname = foodname;
     }
 
