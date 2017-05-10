@@ -1,9 +1,9 @@
 package irastolyarchuk.module1.example;
 
 /**
- * Created by Iryna Stoliarchuk on 05.04.2017.
+ * Created by Iryna Stoliarchuk on 09.04.2017.
  */
-public class HomeWork {
+public class LabWork141 {
     public static void main(String[] args) {
         byte byte1=1;
         short short1=12;
