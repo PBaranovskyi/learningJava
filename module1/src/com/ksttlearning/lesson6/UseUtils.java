@@ -59,6 +59,7 @@ public class UseUtils {
 
 
 
+
         for (int i = 0; i < doubles.length; i++) {
 //            System.out.print(array[i] + " ");
 //            if (i % 5 == 0){
@@ -69,6 +70,13 @@ public class UseUtils {
                 System.out.println();
             }
         }
+
+        byte byteType = 4;
+        long longType = 5;
+        int intType = 5;
+        Integer typeObj=  5;
+
+//        testInput(typeObj);
 
     }
 
@@ -87,5 +95,12 @@ public class UseUtils {
         Random random = new Random();
         int randInt = minBound + random.nextInt(maxBound - minBound);
         return randInt;
+    }
+
+
+    public static void testInput(Long number){
+            String var = "Some";
+            int index = var.indexOf('S');
+        System.out.println(index);
     }
 }
