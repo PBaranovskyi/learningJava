@@ -1,4 +1,4 @@
-package andriiarzhanov;
+package andriiarzhanov.module1;
 
 /**
  * Created by arzhanov on 04.04.17.
