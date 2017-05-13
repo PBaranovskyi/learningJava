@@ -15,7 +15,7 @@ public class CurrencyConvertator {
     }
 
     public static void main(String[] args) {
-        CurrencyConvertator convertor = new CurrencyConvertator(26.35);
+        CurrencyConvertator convertor = new CurrencyConvertator(26.4);
         double result = convertor.convert(20000.00);
         result = (Math.ceil(result * 2) / 2);
         System.out.println(String.format("%.2f", result));
