@@ -12,7 +12,10 @@ public class Day6_Lets_Review {
         scan.nextInt();
 
         while (scan.hasNext()) {
-            String stringVar = "", even = "", odd = "";
+            String stringVar;
+            String even = "";
+            String odd = "";
+
             stringVar = scan.next();
 
             char[] charArray = stringVar.toCharArray();

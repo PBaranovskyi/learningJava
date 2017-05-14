@@ -11,15 +11,14 @@ public class Day7_Arrays {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int[] arr = new int[n];
-        String stringVar = "";
+
         for (int i = 0; i < n; i++) {
             arr[i] = in.nextInt();
         }
 
         for (int k = n - 1; k >= 0; k--) {
-            stringVar = stringVar + arr[k] + " ";
+            System.out.print(arr[k] + " ");
         }
-        System.out.println(stringVar);
         in.close();
     }
 }
