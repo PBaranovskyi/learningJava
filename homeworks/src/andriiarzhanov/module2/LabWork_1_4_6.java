@@ -8,16 +8,16 @@ public class LabWork_1_4_6 {
         int a = 10, b = 20, c = 0;
 
         c = a & b;
-        System.out.println("AND: "+Integer.toBinaryString(a)+"&"+Integer.toBinaryString(b)+"="+c);
+        System.out.println("AND: " + Integer.toBinaryString(a) + "&" + Integer.toBinaryString(b) + "=" + Integer.toBinaryString(c));
 
         c = a | b;
-        System.out.println("OR: "+Integer.toBinaryString(a)+"|"+Integer.toBinaryString(b)+"="+c);
+        System.out.println("OR: " + Integer.toBinaryString(a) + "|" + Integer.toBinaryString(b) + "=" + Integer.toBinaryString(c));
 
         c = a ^ b;
-        System.out.println("XOR: "+Integer.toBinaryString(a)+"^"+Integer.toBinaryString(b)+"="+c);
+        System.out.println("XOR: " + Integer.toBinaryString(a) + "^" + Integer.toBinaryString(b) + "=" + Integer.toBinaryString(c));
 
         c = ~a;
-        System.out.println("NOT: ~"+Integer.toBinaryString(a)+"="+c);
+        System.out.println("NOT: ~" + Integer.toBinaryString(a) + "=" + Integer.toBinaryString(c));
 
     }
 }

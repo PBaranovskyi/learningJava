@@ -8,12 +8,12 @@ public class LabWork_1_4_5 {
         int a = 10, b = 0;
 
         b = a << 1;
-        System.out.println(Integer.toBinaryString(a)+"("+a+")<<1 = "+Integer.toBinaryString(b)+"("+b+")");
+        System.out.println(Integer.toBinaryString(a) + "(" + a + ")<<1 = " + Integer.toBinaryString(b) + "(" + b + ")");
 
         b = a >> 1;
-        System.out.println(Integer.toBinaryString(a)+"("+a+")>>1: "+Integer.toBinaryString(b)+"("+b+")");
+        System.out.println(Integer.toBinaryString(a) + "(" + a + ")>>1: " + Integer.toBinaryString(b) + "(" + b + ")");
 
         b = a >>> 1;
-        System.out.println(Integer.toBinaryString(a)+"("+a+")>>>1: "+Integer.toBinaryString(b)+"("+b+")");
+        System.out.println(Integer.toBinaryString(a) + "(" + a + ")>>>1: " + Integer.toBinaryString(b) + "(" + b + ")");
     }
 }

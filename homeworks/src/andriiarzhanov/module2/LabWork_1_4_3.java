@@ -13,9 +13,9 @@ public class LabWork_1_4_3 {
         boolean isNOT = !a;
         boolean isXOR = a ^ !b;
 
-        System.out.println("AND: "+ isAND);
-        System.out.println("OR: "+ isOR);
-        System.out.println("NOT: "+ isNOT);
-        System.out.println("XOR: "+ isXOR);
+        System.out.println("AND: " + isAND);
+        System.out.println("OR: " + isOR);
+        System.out.println("NOT: " + isNOT);
+        System.out.println("XOR: " + isXOR);
     }
 }
