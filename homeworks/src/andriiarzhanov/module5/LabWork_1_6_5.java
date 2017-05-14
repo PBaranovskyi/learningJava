@@ -14,12 +14,7 @@ public class LabWork_1_6_5 {
             }
         }
 
-        for (int i = 0; i < matrix.length; i++) {
-            for (int y = 0; y < matrix[i].length; y++) {
-                System.out.print(matrix[i][y] + " ");
-            }
-            System.out.println();
-        }
+        printMatrix(matrix);
 
         System.out.println();
         int[][] transpotedMatrix = new int[4][4];
@@ -29,9 +24,13 @@ public class LabWork_1_6_5 {
             }
         }
 
-        for (int i = 0; i < transpotedMatrix.length; i++) {
-            for (int y = 0; y < transpotedMatrix[i].length; y++) {
-                System.out.print(transpotedMatrix[i][y] + " ");
+        printMatrix(transpotedMatrix);
+    }
+
+    private static void printMatrix(int[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int y = 0; y < matrix[i].length; y++) {
+                System.out.print(matrix[i][y] + " ");
             }
             System.out.println();
         }
