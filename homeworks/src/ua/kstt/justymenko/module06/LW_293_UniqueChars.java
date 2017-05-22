@@ -1,6 +1,6 @@
 package ua.kstt.justymenko.module06;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * Created by n1kropol on 5/14/17.
@@ -13,12 +13,17 @@ public class LW_293_UniqueChars {
     }
 
     private static char[] uniqueChars(String s){
-        ArrayList<Character> container = new ArrayList<>();
+//        ArrayList<Character> container = new ArrayList<>();
+//        for (char i : s.toCharArray()) {
+//            if (!container.contains(i)){
+//                container.add(i);
+//            }
+//        }
+
+        HashSet<Character> characters = new HashSet<>();
         for (char i : s.toCharArray()) {
-            if (!container.contains(i)){
-                container.add(i);
-            }
+            characters.add(i);
         }
-        return container.toString().toCharArray();
+        return characters.toString().toCharArray();
     }
 }
