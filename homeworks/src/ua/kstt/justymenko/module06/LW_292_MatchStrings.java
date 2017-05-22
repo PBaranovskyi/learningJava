@@ -8,7 +8,7 @@ public class LW_292_MatchStrings {
         String myStr1 = "Cartoon";
         String myStr2 = "Tomcat";
         StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < myStr1.length(); i++) {
+/*        for (int i = 0; i < myStr1.length(); i++) {
             char finder = myStr1.charAt(i);
             char match;
             boolean isFinderPresent = false;
@@ -22,6 +22,12 @@ public class LW_292_MatchStrings {
 
             if (!isFinderPresent)
                 builder.append(finder);
+        }*/
+
+        for (Character c : myStr1.toCharArray()) {
+            if (myStr2.indexOf(c) == -1){
+                builder.append(c);
+            }
         }
         System.out.println(builder.toString());
 //        Crn
