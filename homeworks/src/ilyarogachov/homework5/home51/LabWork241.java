@@ -1,7 +1,7 @@
-package ilyarogachov.homework5;
+package ilyarogachov.homework5.home51;
 
 /**
- * Created by rogachev on 22.05.17.
+ * Created by rogachev on 23.05.17.
  */
 public class LabWork241 {
     public static void main(String[] args) {

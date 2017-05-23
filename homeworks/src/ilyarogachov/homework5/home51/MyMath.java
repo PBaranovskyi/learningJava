@@ -1,12 +1,13 @@
-package ilyarogachov.homework5;
-import java.util.*;
+package ilyarogachov.homework5.home51;
+
+import java.util.Arrays;
 
 /**
- * Created by rogachev on 22.05.17.
+ * Created by rogachev on 23.05.17.
  */
 public class MyMath {
 
-   public static int findMax(int [] arg){
+    public static int findMax(int [] arg){
         int max = Arrays.stream(arg).max().getAsInt();
         return max;
 
