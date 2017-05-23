@@ -30,6 +30,15 @@ public class EthernetAdapter extends Device {
     }
 
     @Override
+    public String toString() {
+        return "EthernetAdapter: manufacturer = " + getManufacturer() +
+                ", price = " + getPrice() +
+                ", serialNumber = " + getSerialNumber() +
+                ", speed = " + speed +
+                ", mac = " + mac;
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof EthernetAdapter)) return false;
