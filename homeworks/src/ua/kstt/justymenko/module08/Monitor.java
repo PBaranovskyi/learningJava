@@ -28,4 +28,18 @@ public class Monitor extends Device {
     public void setResolutionY(int resolutionY) {
         this.resolutionY = resolutionY;
     }
+
+    @Override
+    public String toString() {
+        return "Monitor: manufacturer = " + getManufacturer() +
+                ", price = " + getPrice() +
+                ", serialNumber = " + getSerialNumber() +
+                ", X = " + resolutionX +
+                ", Y = " + resolutionY;
+    }
+
+    public static void main(String[] args) {
+        Monitor monitor = new Monitor("Samsung", 120, "AB1234567CD", 1280,1024);
+        System.out.println(monitor.toString());
+    }
 }

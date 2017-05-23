@@ -37,4 +37,14 @@ public class Device {
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
+
+    @Override
+    public String toString() {
+        return "Device: manufacturer = " + manufacturer + ", price = " + price + ", serialNumber = " + serialNumber;
+    }
+
+    public static void main(String[] args) {
+        Device device = new Device("Samsung", 120, "AB1234567CD");
+        System.out.println(device.toString());
+    }
 }
