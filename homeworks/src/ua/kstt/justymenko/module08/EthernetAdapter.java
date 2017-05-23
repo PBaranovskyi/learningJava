@@ -40,4 +40,12 @@ public class EthernetAdapter extends Device {
         if (getSpeed() != that.getSpeed()) return false;
         return getMac().equals(that.getMac());
     }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + getSpeed();
+        result = 31 * result + getMac().hashCode();
+        return result;
+    }
 }

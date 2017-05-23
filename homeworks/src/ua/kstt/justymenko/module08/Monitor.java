@@ -50,6 +50,14 @@ public class Monitor extends Device {
         return getResolutionY() == monitor.getResolutionY();
     }
 
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + getResolutionX();
+        result = 31 * result + getResolutionY();
+        return result;
+    }
+
     public static void main(String[] args) {
         Monitor monitor = new Monitor("Samsung", 120, "AB1234567CD", 1280,1024);
         System.out.println(monitor.toString());

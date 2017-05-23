@@ -54,6 +54,14 @@ public class Device {
         return  (manufacturer.equals(device.manufacturer));
     }
 
+    @Override
+    public int hashCode() {
+        int result = getManufacturer().hashCode();
+        result = 31 * result + (getPrice() != +0.0f ? Float.floatToIntBits(getPrice()) : 0);
+        result = 31 * result + getSerialNumber().hashCode();
+        return result;
+    }
+
     public static void main(String[] args) {
         Device device1 = new Device("Samsung", 120, "AB1234567CD");
         System.out.println(device1.toString());
