@@ -38,8 +38,28 @@ public class Monitor extends Device {
                 ", Y = " + resolutionY;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Monitor)) return false;
+        if (!super.equals(o)) return false;
+
+        Monitor monitor = (Monitor) o;
+
+        if (getResolutionX() != monitor.getResolutionX()) return false;
+        return getResolutionY() == monitor.getResolutionY();
+    }
+
     public static void main(String[] args) {
         Monitor monitor = new Monitor("Samsung", 120, "AB1234567CD", 1280,1024);
         System.out.println(monitor.toString());
+
+        Device device1 = new Device("Samsung", 120, "AB1234567CD");
+        System.out.println(device1.toString());
+        Device device2 = new Device("Samsung", 120, "AB12");
+        Device device3 = new Device("Samsung", 122, "AB12");
+        System.out.println(device1.equals(device2));
+        System.out.println(device1.equals(device3));
+        System.out.println(device2.equals(device3));
     }
 }

@@ -28,4 +28,16 @@ public class EthernetAdapter extends Device {
     public void setMac(String mac) {
         this.mac = mac;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof EthernetAdapter)) return false;
+        if (!super.equals(o)) return false;
+
+        EthernetAdapter that = (EthernetAdapter) o;
+
+        if (getSpeed() != that.getSpeed()) return false;
+        return getMac().equals(that.getMac());
+    }
 }
