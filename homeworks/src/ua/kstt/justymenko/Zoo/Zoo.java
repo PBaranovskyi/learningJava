@@ -27,7 +27,6 @@ public class Zoo {
         Elephant elephant = new Elephant();
         Parrot parrot = new Parrot();
         Owl owl = new Owl();
-
         Animal[] zooArray = new Animal[6];
         zooArray[0] = crocodileGosha;
         zooArray[1] = snake;
