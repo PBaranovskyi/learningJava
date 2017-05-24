@@ -33,17 +33,18 @@ public class Main {
         shapes[8] = new Triangle("PINK", 4, 3, 6);
 
         printShapes(shapes);
-        System.out.println("Total area is: "+sumArea(shapes));
-        System.out.println("Area of triangles is: "+sumTriangleArea(shapes));
-        System.out.println("Area of rectangles is: "+sumRectangleArea(shapes));
-        System.out.println("Area of circles is: "+sumCircleArea(shapes));
+        System.out.println("Total area is: " + sumArea(shapes));
+        System.out.println("Area of triangles is: " + sumTriangleArea(shapes));
+        System.out.println("Area of rectangles is: " + sumRectangleArea(shapes));
+        System.out.println("Area of circles is: " + sumCircleArea(shapes));
     }
 
     private static void printShapes(Shape[] shapes) {
         for (int i = 0; i < shapes.length; i++) {
-            System.out.println(shapes[i].toString()+", area is: "+shapes[i].calsArea());
+            System.out.println(shapes[i].toString() + ", area is: " + shapes[i].calsArea());
         }
     }
+
     private static double sumArea(Shape[] shapes) {
         double sumArea = 0.;
         for (int i = 0; i < shapes.length; i++) {

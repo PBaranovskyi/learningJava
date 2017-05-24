@@ -20,7 +20,7 @@ public class Shape {
 
     @Override
     public String toString() {
-        return "Shape, color is: "+getShapeColor();
+        return "Shape, color is: " + getShapeColor();
     }
 
     public double calsArea() {
