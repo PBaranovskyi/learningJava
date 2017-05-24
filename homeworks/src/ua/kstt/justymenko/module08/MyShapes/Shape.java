@@ -18,4 +18,8 @@ public class Shape {
     public double calcArea(){
         return 0;
     }
+
+    public String getShapeColor() {
+        return shapeColor;
+    }
 }
