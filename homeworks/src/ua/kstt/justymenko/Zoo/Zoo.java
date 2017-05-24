@@ -19,7 +19,6 @@ public class Zoo {
                 ((Bird) animal).letFly();
         }
     }
-
     public static void main(String[] args) {
         Crocodile crocodileGosha = new Crocodile();
         Snake snake = new Snake();
