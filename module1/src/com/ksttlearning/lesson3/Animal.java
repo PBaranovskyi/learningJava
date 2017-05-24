@@ -1,12 +1,19 @@
 package com.ksttlearning.lesson3;
 
+
 /**
  * Created by citsym on 19.04.17.
  */
 public class Animal {
 
-    private String name;
-    private String foodName;
+    private static int animalsCount = 3;
+
+    protected String name;
+    protected String foodName;
+
+    public Animal() {
+        animalsCount++;
+    }
 
     public Animal(String animalName, String animalFoodName) {
         this.name = animalName;
@@ -15,20 +22,12 @@ public class Animal {
 
 
     public void feed() {
-        System.out.println(name + " eats " + foodName);
+        System.out.println(getClass().getSimpleName() + " " + name + " eats " + foodName);
     }
 
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getFoodName() {
-        return foodName;
+    public static int getAnimalsCount() {
+        return animalsCount;
     }
 
     public void setFoodName(String foodName) {
