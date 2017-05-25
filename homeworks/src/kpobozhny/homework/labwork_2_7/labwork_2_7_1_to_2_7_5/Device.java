@@ -23,6 +23,9 @@ package kpobozhny.homework.labwork_2_7.labwork_2_7_1_to_2_7_5;
   Task (2.7.4):
         Override hashCode() method in each class
 
+  Task (2.7.5)
+        Create program (class Main). The program must demonstrate the creation of an arrays of different types devices, setup and output characteristics of each device
+
         */
 
 public class Device {
