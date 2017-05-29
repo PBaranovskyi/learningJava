@@ -1,4 +1,4 @@
-package ilyarogachov.homework6.home51;
+package ilyarogachov.homework6.home61;
 
 /**
  * Created by rogachev on 29.05.17.
