@@ -15,14 +15,29 @@ public class Zoo {
         Snake lucy = new Snake("lucy");
         Snake olya = new Snake("olya");
         CrocodileOur gena = new CrocodileOur();
-        Owl owl = new Owl();
+        Owl owlTanya = new Owl();
         Parrot kesha = new Parrot();
+
+        Bird sonOfKesha = kesha.createFromEgg();
+        if (sonOfKesha instanceof Parrot){
+            System.out.println("New parrot was born");
+        }
+
+        //=================
+        Bird sonOfOwl = owlTanya.createFromEgg();
+        sonOfOwl.fly();
+        sonOfOwl.feed();
+
+        if (sonOfOwl instanceof Owl){
+            System.out.println("New owl was born");
+        }
+        // =================
 
         Animal[] animals = new Animal[5];
 
         animals[0] = lucy;
         animals[1] = gena;
-        animals[2] = owl;
+        animals[2] = owlTanya;
         animals[3] = kesha;
         animals[4] = olya;
 

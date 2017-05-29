@@ -5,9 +5,15 @@ import com.ksttlearning.lesson3.Animal;
 /**
  * Created by citsym on 24.05.17.
  */
-public class Bird extends Animal {
+public abstract class Bird extends Animal {
 
-    void fly(){
-        System.out.println( getClass().getSimpleName() +  " can fly");
+    abstract void fly();
+
+    public Bird createFromEgg(){
+        System.out.println("I`m created");
+        return getNewBirdInstanse();
     }
+
+    abstract Bird getNewBirdInstanse() ;
+
 }
