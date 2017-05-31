@@ -39,7 +39,7 @@ public class Main {
         double sumRectArea=0;
         double sumTriangleArea=0;
         double sumCircleArea=0;
-        for (Shape elem : arr) {
+/*        for (Shape elem : arr) {
             if (elem instanceof Rectangle){
                 Rectangle rec = (Rectangle)elem;
                 area=rec.calcArea();
@@ -53,7 +53,7 @@ public class Main {
             }else if (elem instanceof Circle){
                 Circle ci = (Circle) elem;
                 area=ci.calcArea();
-                System.out.println("This is "+circle+", area is: "+String.format("%.5f", area));
+                System.out.println("This is "+ci+", area is: "+String.format("%.5f", area));
                 sumCircleArea+=area;
             }else{
                 area=elem.calcArea();
@@ -61,7 +61,21 @@ public class Main {
             }
             sumArea+=area;
 
+        }*/
+        for (Shape item : arr) {
+            area=item.calcArea();
+            if (item instanceof Rectangle){
+                sumRectArea+=area;
+            }else if (item instanceof Triangle){
+                sumTriangleArea+=area;
+            }else if (item instanceof Circle){
+                sumCircleArea+=area;
+            }
+            System.out.println("This is "+item+", area is: "+String.format("%.5f", area));
+            sumArea+=item.calcArea();
+
         }
+
         System.out.println("----------------------------------");
         System.out.println("Rectangles total area: "+String.format("%.5f", sumRectArea));
         System.out.println("Circles total area: "+String.format("%.5f", sumCircleArea));
