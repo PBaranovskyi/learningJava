@@ -8,6 +8,10 @@ public class Monitor extends Device {
     int resolutionX;
     int getResolutionY;
 
+    public Monitor(String manufacturer, float price, String serialNumber) {
+        super(manufacturer, price, serialNumber);
+    }
+
     public void setResolutionX(int resolutionX) {
         this.resolutionX = resolutionX;
     }

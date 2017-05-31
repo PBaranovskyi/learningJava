@@ -7,6 +7,10 @@ public class EthernetAdapter extends Device {
     int speed;
     String mac;
 
+    public EthernetAdapter(String manufacturer, float price, String serialNumber) {
+        super(manufacturer, price, serialNumber);
+    }
+
     public void setSpeed(int speed) {
         this.speed = speed;
     }
