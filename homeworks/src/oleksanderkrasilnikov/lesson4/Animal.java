@@ -11,6 +11,6 @@ public class Animal {
     }
 
     public void feed() {
-        System.out.println(name + " eats " + foodName);
+        System.out.println(name + " feed " + foodName);
     }
 }
