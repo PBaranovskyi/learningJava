@@ -3,6 +3,8 @@ package com.ksttlearning.practice10;
 
 import com.ksttlearning.lesson3.Animal;
 
+import java.util.ArrayList;
+
 /**
  * Created by citsym on 24.05.17.
  */
@@ -15,11 +17,11 @@ public class Zoo {
         Snake lucy = new Snake("lucy");
         Snake olya = new Snake("olya");
         CrocodileOur gena = new CrocodileOur();
-        Owl owlTanya = new Owl();
-        Parrot kesha = new Parrot();
+        Owl owlTanya = new Owl("tanya");
+        Parrot kesha = new Parrot("kesha");
 
         Bird sonOfKesha = kesha.createFromEgg();
-        if (sonOfKesha instanceof Parrot){
+        if (sonOfKesha instanceof Parrot) {
             System.out.println("New parrot was born");
         }
 
@@ -28,32 +30,60 @@ public class Zoo {
         sonOfOwl.fly();
         sonOfOwl.feed();
 
-        if (sonOfOwl instanceof Owl){
+        if (sonOfOwl instanceof Owl) {
             System.out.println("New owl was born");
         }
         // =================
 
-        Animal[] animals = new Animal[5];
+        ArrayList<Animal> animals = new ArrayList<>();
 
-        animals[0] = lucy;
-        animals[1] = gena;
-        animals[2] = owlTanya;
-        animals[3] = kesha;
-        animals[4] = olya;
+        animals.add(lucy);
+        animals.add(gena);
+        animals.add(owlTanya);
+        animals.add(kesha);
+        animals.add(olya);
+//        animals.add(null);
+//        animals.add("Some Text");
+//        animals.add(123213);
+
+        animals.add(1, new Snake("Masha"));
+
+        for (int i = 0; i < animals.size(); i++) {
+            Animal item = animals.get(i);
+            item.feed();
+        }
+        feedListOfAnimals(animals);
 
 
-        letsFly(animals);
-        feedAllAnimals(animals);
+        ArrayList<Reptile> reptileList = new ArrayList<>();
+        reptileList.add(gena);
+        reptileList.add(lucy);
+
+        feedListOfAnimals(reptileList);
+
+
+
+//        letsFly(animals);
+//        feedAllAnimals(animals);
 
         System.out.println(Animal.getAnimalsCount());
 
     }
 
+    private static void feedListOfAnimals(ArrayList<? extends Animal> animals) {
 
-    static void letsFly(Animal[] animals){
+        for (Animal item : animals) {
+            item.feed();
+            System.out.println(item);
+        }
+
+    }
+
+
+    static void letsFly(Animal[] animals) {
 
         for (Animal animal : animals) {
-            if (animal instanceof Bird){
+            if (animal instanceof Bird) {
                 Bird bird = (Bird) animal;
                 bird.fly();
             }
@@ -61,7 +91,7 @@ public class Zoo {
 
     }
 
-    static void feedAllAnimals(Animal[] animals){
+    static void feedAllAnimals(ArrayList<Reptile> animals) {
 
         for (Animal animal : animals) {
             animal.feed();

@@ -7,6 +7,6 @@ public class CrocodileOur extends Reptile {
 
 
     public CrocodileOur() {
-        setFoodName("frogs");
+        super("", "ffrogs");
     }
 }

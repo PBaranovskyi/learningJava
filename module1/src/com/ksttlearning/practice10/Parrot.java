@@ -6,6 +6,12 @@ package com.ksttlearning.practice10;
  */
 public class Parrot extends Bird {
 
+    private String name;
+
+    public Parrot(String name) {
+
+        this.name = name;
+    }
 
     @Override
     void fly() {
@@ -14,6 +20,16 @@ public class Parrot extends Bird {
 
     @Override
     Bird getNewBirdInstanse() {
-        return new Parrot();
+        return new Parrot("");
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    protected String getFoodName() {
+        return "Seed";
     }
 }

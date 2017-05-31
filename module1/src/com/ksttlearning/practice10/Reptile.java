@@ -7,10 +7,24 @@ import com.ksttlearning.lesson3.Animal;
  */
 public class Reptile extends Animal{
 
+    private String name;
+    private String foodName;
+
     public Reptile() {
     }
 
     public Reptile(String name, String mice) {
-        super(name, mice);
+        this.name = name;
+        this.foodName = mice;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    protected String getFoodName() {
+        return foodName;
     }
 }
