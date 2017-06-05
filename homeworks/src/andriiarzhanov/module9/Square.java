@@ -1,4 +1,4 @@
-package andriiarzhanov.classwork_170605;
+package andriiarzhanov.module9;
 
 /**
  * Created by arzhanov on 05.06.17.
