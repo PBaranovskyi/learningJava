@@ -56,6 +56,8 @@ public class MyWindow {
     }
 
     public static void main(String[] args) {
+
+        MyWindow[] windowArray = new MyWindow[4];
         MyWindow myWindow1 = new MyWindow(1.1, 2.2, 1, "white", true);
         MyWindow myWindow2 = new MyWindow(1.1, 2.2, 2, "red", true);
         MyWindow myWindow3 = new MyWindow(1.1, 2.2, 3, "black", false);
@@ -77,7 +79,18 @@ public class MyWindow {
         list.add(myWindow6);
         list.add(myWindow7);
 
+        windowArray[0] = new MyWindow();
+        windowArray[1] = new MyWindow(12.0, 15.5);
+        windowArray[2] = new MyWindow(11.0, 13.0, 5);
+        windowArray[3] = new MyWindow(21.2, 23.3, 5, "yellow", true);
+
         for (MyWindow myWindow : list) {
+            myWindow.printFields();
+        }
+
+        System.out.println();
+
+        for (MyWindow myWindow : windowArray) {
             myWindow.printFields();
         }
     }
