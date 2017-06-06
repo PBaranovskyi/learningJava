@@ -21,11 +21,13 @@ public class MyWindow {
     }
 
     public MyWindow(double width, double height) {
+        this();
         this.width = width;
         this.height = height;
     }
 
     public MyWindow(double width, double height, int numberOfGlass) {
+        this();
         this.width = width;
         this.height = height;
         this.numberOfGlass = numberOfGlass;
