@@ -1,9 +1,9 @@
-package ua.kstt.justymenko.module10;
+package ua.kstt.justymenko.module10.shapes;
 
 /**
  * Created by n1kropol on 6/1/17.
  */
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
     private double width;
     private double length;
 

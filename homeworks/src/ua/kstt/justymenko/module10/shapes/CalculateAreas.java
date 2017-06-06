@@ -1,4 +1,4 @@
-package ua.kstt.justymenko.module10;
+package ua.kstt.justymenko.module10.shapes;
 
 import java.util.ArrayList;
 

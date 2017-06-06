@@ -1,9 +1,9 @@
-package ua.kstt.justymenko.module10;
+package ua.kstt.justymenko.module10.shapes;
 
 /**
  * Created by n1kropol on 5/30/17.
  */
-public class Circle extends Shape{
+public class Circle extends Shape {
     private double radius;
 
     public Circle() {

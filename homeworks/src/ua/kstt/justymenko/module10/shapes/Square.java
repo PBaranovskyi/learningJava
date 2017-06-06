@@ -1,4 +1,4 @@
-package ua.kstt.justymenko.module10;
+package ua.kstt.justymenko.module10.shapes;
 
 /**
  * Created by n1kropol on 6/1/17.
