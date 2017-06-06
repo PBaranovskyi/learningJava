@@ -87,9 +87,7 @@ public class MyWindow {
         for (MyWindow myWindow : list) {
             myWindow.printFields();
         }
-
         System.out.println();
-
         for (MyWindow myWindow : windowArray) {
             myWindow.printFields();
         }
