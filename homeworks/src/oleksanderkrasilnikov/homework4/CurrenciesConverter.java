@@ -1,5 +1,6 @@
 package oleksanderkrasilnikov.homework4;
 
+
 public class CurrenciesConverter {
 
     private double rate;
@@ -8,11 +9,11 @@ public class CurrenciesConverter {
     }
 
     public double convert(double amount){
-       return amount/rate;
+       return Math.round(amount/rate * 100)/100.0;
     }
 
     public static void main(String[] args) {
         CurrenciesConverter amount = new CurrenciesConverter(26.8);
-        System.out.println(amount.convert(26800));
+        System.out.println(amount.convert(22312.129));
     }
 }

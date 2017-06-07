@@ -13,32 +13,32 @@ public class Triangle {
     private double c1;
     private double c2;
 
-    private double A;//sideAB
-    private double B;//sideAC
-    private double C;//sideBC
+    private double a;//sideAB
+    private double b;//sideAC
+    private double c;//sideBC
 
     public Triangle() {
         System.out.println("Specify the coordinates of the vertex of the triangle");
         Scanner scan = new Scanner(System.in);
-        System.out.println("Vertex A");
+        System.out.println("Vertex a");
         System.out.println("A1 = ");
         a1 = scan.nextDouble();
         System.out.println("A2 = ");
         a1 = scan.nextDouble();
-        System.out.println("Vertex B");
+        System.out.println("Vertex b");
         System.out.println("B1 = ");
         b1 = scan.nextDouble();
         System.out.println("B2 = ");
         b1 = scan.nextDouble();
-        System.out.println("Vertex C");
+        System.out.println("Vertex c");
         System.out.println("C1 = ");
         c1 = scan.nextDouble();
         System.out.println("C2 = ");
         c1 = scan.nextDouble();
 
-        A = lengthOfSide(a1, a2, b1, b2);
-        B = lengthOfSide(a1, a2, c1, c2);
-        C = lengthOfSide(b1, b2, c1, c2);
+        a = lengthOfSide(a1, a2, b1, b2);
+        b = lengthOfSide(a1, a2, c1, c2);
+        c = lengthOfSide(b1, b2, c1, c2);
     }
 
     public Triangle(double a1, double a2, double b1, double b2, double c1, double c2) {
@@ -49,9 +49,9 @@ public class Triangle {
         this.c1 = c1;
         this.c2 = c2;
 
-        A = lengthOfSide(a1, a2, b1, b2);
-        B = lengthOfSide(a1, a2, c1, c2);
-        C = lengthOfSide(b1, b2, c1, c2);
+        a = lengthOfSide(a1, a2, b1, b2);
+        b = lengthOfSide(a1, a2, c1, c2);
+        c = lengthOfSide(b1, b2, c1, c2);
     }
 
     public double lengthOfSide(double x1, double y1, double x2, double y2) {
@@ -59,26 +59,26 @@ public class Triangle {
     }
 
     public void trianglePerimeter() {
-        System.out.println("This triangle perimeter is = " + (A + B + C));
+        System.out.println("This triangle perimeter is = " + (a + b + c));
     }
 
     public void triangleArea() {
-        double p = (0.5 * (A + B + C));
-        System.out.println("This triangle area is = " + sqrt(p * (p - A) * (p - B) * (p - C)));
+        double p = (0.5 * (a + b + c));
+        System.out.println("This triangle area is = " + sqrt(p * (p - a) * (p - b) * (p - c)));
     }
 
     public void triangleView() {
-        if (A >= B + C || B >= A + C || C >= B + A) {
+        if (a >= b + c || b >= a + c || c >= b + a) {
             System.out.println("This is not a triangle");
-        } else if (A == sqrt(pow(B, 2) + pow(C, 2)) || B == sqrt(pow(A, 2) + pow(C, 2)) || C == sqrt(pow(B, 2) + pow(A, 2))) {
+        } else if (a == sqrt(pow(b, 2) + pow(c, 2)) || b == sqrt(pow(a, 2) + pow(c, 2)) || c == sqrt(pow(b, 2) + pow(a, 2))) {
             System.out.println("Triangle is rectangular");//прямоугольный
-        } else if (B == A && B == C) {
+        } else if (b == a && b == c) {
             System.out.println("Triangle is equilateral");//равносторонний
-        } else if (B != A && B != C && A != C) {
+        } else if (b != a && b != c && a != c) {
             System.out.println("Triangle is versatile");//разносторонний
-        } else if (A == B && A != C || B == C && B != A || C == A && C != B) {
+        } else if (a == b && a != c || b == c && b != a || c == a && c != b) {
             System.out.println("Triangle is isosceles");//равнобедренный
-        } else if (A > sqrt(pow(B, 2) + pow(C, 2)) || B > sqrt(pow(A, 2) + pow(C, 2)) || C > sqrt(pow(B, 2) + pow(A, 2))) {
+        } else if (a > sqrt(pow(b, 2) + pow(c, 2)) || b > sqrt(pow(a, 2) + pow(c, 2)) || c > sqrt(pow(b, 2) + pow(a, 2))) {
             System.out.println("Triangle is obtuse");//тупоугольный
         } else {
             System.out.println("Triangle is acute");//остроугольный
