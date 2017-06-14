@@ -19,13 +19,13 @@ public class MyWindow {
     }
 
     public MyWindow(double width, double height) {
+        this();
         this.width = width;
         this.height = height;
     }
 
     public MyWindow(double width, double height, int numberOfGlass) {
-        setWidth(width);
-        setHeight(height);
+        this(width, height);
         setNumberOfGlass(numberOfGlass);
     }
 
