@@ -7,4 +7,5 @@ public class Bird extends Animal {
     void fly(){
         System.out.println(getClass().getSimpleName() + " can fly!");
     }
+
 }
