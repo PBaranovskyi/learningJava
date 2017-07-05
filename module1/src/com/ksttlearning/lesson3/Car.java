@@ -1,9 +1,11 @@
 package com.ksttlearning.lesson3;
 
+import com.ksttlearning.lesson14.Item;
+
 /**
  * Created by citsym on 12.04.17.
  */
-public class Car {
+public class Car extends Item {
     private String color = "white";
     private int engineValue = 2;
     private int doorsCount;
