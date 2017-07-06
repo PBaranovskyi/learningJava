@@ -6,28 +6,28 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<form id="points" class="form" action="http://localhost:8080" method="post">
+<form id="points" class="form" action="http://google.com:8080" method="post">
 
     <div class="input-sections">
         <div><h4>Point 1</h4></div>
         <label for="oneX">X:</label>
-        <input type="number" id="oneX">
+        <input name="oneX" form="points" type="number" id="oneX">
         <label for="oneY">Y:</label>
-        <input type="number" id="oneY">
+        <input name="oneY" form="points" type="number" id="oneY">
     </div>
     <div class="input-sections">
         <div><h4>Point 2</h4></div>
         <label for="twoX">X:</label>
-        <input type="number" id="twoX">
+        <input name="twoX" form="points" type="number" id="twoX">
         <label for="twoY">Y:</label>
-        <input type="number" id="twoY">
+        <input name="twoY" form="points" type="number" id="twoY">
     </div>
     <div class="input-sections">
         <div><h4>Point 3</h4></div>
         <label for="threeX">X:</label>
-        <input type="number" id="threeX">
+        <input name="threeX" form="points" type="number" id="threeX">
         <label for="threeY">Y:</label>
-        <input type="number" id="threeY">
+        <input name="threeY" form="points" type="number" id="threeY">
     </div>
     <div class="control">
         <button type="submit" form="points">Отправить форму</button>
