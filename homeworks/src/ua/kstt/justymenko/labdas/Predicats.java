@@ -41,6 +41,7 @@ public class Predicats {
         List<String> languages = Arrays.asList("Java", "Scala", "C++", "Haskell", "Lisp", "JavaScript");
         printJStr(languages, (str) -> str.startsWith("J"));
 
+        //using MyConverter
         updateList(languages, (str -> str.toUpperCase()));
 
 //        http://javarevisited.blogspot.com/2014/02/10-example-of-lambda-expressions-in-java8.html
