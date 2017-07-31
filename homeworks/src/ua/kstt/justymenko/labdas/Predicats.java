@@ -27,6 +27,12 @@ public class Predicats {
         }
     }
 
+    public static void updateList(List<String> list, MyConverter updater){
+        for (String s : list) {
+            System.out.println(updater.convertStr(s));
+        }
+    }
+
     public static void main(String[] args) {
         Integer[] arr = {5, 4, 2, 3, 8, 10};
         Integer result = sumEven(arr,(arr2) -> arr2 % 2 == 0);
@@ -35,6 +41,9 @@ public class Predicats {
         List<String> languages = Arrays.asList("Java", "Scala", "C++", "Haskell", "Lisp", "JavaScript");
         printJStr(languages, (str) -> str.startsWith("J"));
 
+        updateList(languages, (str -> str.toUpperCase()));
+
 //        http://javarevisited.blogspot.com/2014/02/10-example-of-lambda-expressions-in-java8.html
+//        http://www.java2s.com/Tutorials/Java/java.util.function/Consumer/index.htm
     }
 }
