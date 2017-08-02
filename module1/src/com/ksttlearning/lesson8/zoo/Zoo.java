@@ -28,6 +28,21 @@ public class Zoo {
         System.out.println();
         letsFly(animals);
         System.out.println(Animal.getAnimalsCount());
+
+        drinkBearWithAnimal(new Animal() {
+            @Override
+            public void drinkBear(int liters) {
+                Owl olya = new Owl();
+                olya.drinkBear(liters);
+                System.out.println("I drink beer with olya");
+            }
+        });
+    }
+
+
+    public static void drinkBearWithAnimal(Animal animal){
+
+        animal.drinkBear(10);
     }
 
     public static void feedAllAnimals(Animal[] animals) {

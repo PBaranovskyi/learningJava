@@ -10,7 +10,7 @@ import java.util.function.Supplier;
 /**
  * Created by citsym on 17.07.17.
  */
-public class lesson17 {
+public class Lesson18 {
 
 
     public static void main(String[] args) {

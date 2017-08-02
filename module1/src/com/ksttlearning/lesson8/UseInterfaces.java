@@ -53,7 +53,7 @@ public class UseInterfaces {
     public static void feedAllThatCanEat(CanEat[] objects) {
 
         for (CanEat object : objects) {
-//            object.eat();
+            object.eat();
         }
     }
 
