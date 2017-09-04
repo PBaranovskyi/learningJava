@@ -39,10 +39,11 @@ public class Main {
         articleList.add(sport);
         articleList.add(political);
         try{
-            Article searchItem = getArticle(articleList, "BBC");
+            Article searchItem = getArticle(articleList, "JS.");
             System.out.println(searchItem.getAuthor());
         } catch (NullPointerException e){
-            System.out.println("Article wasn't found");
+//            System.out.println("Article wasn't found");
+            System.out.println(articleList.get(articleList.size() - 1).getAuthor());
         }
     }
 
