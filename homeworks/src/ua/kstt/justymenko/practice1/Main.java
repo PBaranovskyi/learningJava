@@ -2,7 +2,9 @@ package ua.kstt.justymenko.practice1;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 /**
  * Created by Ustymenko on 09/04/17.
@@ -39,28 +41,44 @@ public class Main {
         articleList.add(javaScript);
         articleList.add(sport);
         articleList.add(political);
+//
+//        Article searchItem = getArticle(articleList, "java");
+//        if (searchItem != null) {
+//            System.out.println(searchItem.getAuthor());
+//        } else {
+////            System.out.println("Article wasn't found");
+//            System.out.println(articleList.get(articleList.size() - 1).getAuthor());
+//        }
+//
+//
+//        //////////////////////////////
+//
+//        Optional<Article> optionalSearchItem = getArticleJ8(articleList, "java");
+//        Optional<String> tag = optionalSearchItem
+//                .map(Article::getTags)
+//                .map(tags -> tags.get(1));
+//        tag.ifPresent(System.out::println);
+//
+//        searchItem = optionalSearchItem.orElse(articleList.get(articleList.size() - 1));
+//
+//        System.out.println(searchItem.getAuthor());
 
-        Article searchItem = getArticle(articleList, "java");
-        if (searchItem != null) {
-            System.out.println(searchItem.getAuthor());
-        } else {
-//            System.out.println("Article wasn't found");
-            System.out.println(articleList.get(articleList.size() - 1).getAuthor());
-        }
+
+        Map<String, List<Article>> map = groupByAutor(articleList);
+
+        map.forEach((k,v) -> System.out.println(k + " " + v));
+
+        List<Article> articles = map.get("John Dow");
 
 
-        //////////////////////////////
+        /////////////
 
-        Optional<Article> optionalSearchItem = getArticleJ8(articleList, "java");
-        Optional<String> tag = optionalSearchItem
-                .map(Article::getTags)
-                .map(tags -> tags.get(1));
-        tag.ifPresent(System.out::println);
+        System.out.println(articles);
+    }
 
-        searchItem = optionalSearchItem.orElse(articleList.get(articleList.size() - 1));
 
-        System.out.println(searchItem.getAuthor());
-
+    public static Map<String, List<Article>> groupByAutor(List<Article> list){
+        return list.stream().collect(Collectors.groupingBy(Article::getAuthor));
     }
 
     private static Article getArticle(List<Article> articleList, String titleValue) {
