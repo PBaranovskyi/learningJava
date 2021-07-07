@@ -27,12 +27,12 @@ public class labwork_1_5_5 {
             try {
                 n = Integer.parseInt(inputString);
 
-                // calculate SUM
+                // convert SUM
                 for (int i = 0; i < n; i++) {
                     sum += i;
                 }
 
-                // calculate AVG
+                // convert AVG
                 avg = (double) sum / n;
 
                 // print result

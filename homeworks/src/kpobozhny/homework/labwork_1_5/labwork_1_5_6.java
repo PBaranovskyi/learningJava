@@ -25,7 +25,7 @@ public class labwork_1_5_6 {
                 n = Integer.parseInt(inputString);
                 n = Math.abs(n);
 
-                // calculate SUM
+                // convert SUM
                 for (int i = 0; i < inputString.length(); i++) {
                     sum += Math.pow(Character.getNumericValue(inputString.charAt(i)), 2);
                 }
